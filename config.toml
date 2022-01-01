@@ -5,7 +5,7 @@ theme = "introduction"
 # googleAnalytics                 = ""                     # https://gohugo.io/templates/internal/#google-analytics
 
 [params]
-#customCSS = ["/resources/custom.css"] # Include custom css files placed under assets/  
+customCSS = ["custom.css"] # Include custom css files placed under assets/  
 dateFormat = "Jan 2, 2006" 
 email = "" # E-mail address for contact section
 fadeIn = true # Turn on/off the fade-in effect
