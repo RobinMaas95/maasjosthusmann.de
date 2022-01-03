@@ -8,7 +8,7 @@ theme = "introduction"
 customCSS = ["custom.css"] # Include custom css files placed under assets/  
 dateFormat = "Jan 2, 2006" 
 email = "" # E-mail address for contact section
-fadeIn = true # Turn on/off the fade-in effect
+fadeIn = false # Turn on/off the fade-in effect
 fadeInIndex = false # Turn on/off the fade-in effect on the index page even if fade-in was otherwise turned off
 favicon = "/img/fav.ico" # Path to favicon file
 showRSSButton = false # Show rss button in navigation
@@ -92,11 +92,6 @@ weight = 2
 name = "Contact"
 url = "/#contact"
 weight = 3
-[[menu.main]]
-name = "Imprint/Impressum"
-url = "/impressum"
-weight = 4
-
 
 # We only use tag as a taxonomies
 # You can add more by yourself
