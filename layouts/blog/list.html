@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <div class="container markdown top-pad">
+        {{ .Content }}
+    </div>
+    <div class="container">
+        {{ if .Site.Params.home.showLatest | default true }} 
+        {{else}}
+            {{ partialCached "blog/li.html" . }}
+        {{end}}
+    </div>
+{{ end }}
