@@ -92,6 +92,11 @@ weight = 2
 name = "Contact"
 url = "/#contact"
 weight = 3
+[[menu.main]]
+name = "Imprint/Impressum"
+url = "/impressum"
+weight = 4
+
 
 # We only use tag as a taxonomies
 # You can add more by yourself

@@ -8,3 +8,9 @@
     display: initial!important;
     margin: auto!important
 }
+
+.impressum p {
+    text-align: left;
+    margin: auto;
+    width:100%;
+}

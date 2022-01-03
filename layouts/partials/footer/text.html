@@ -1,0 +1,13 @@
+<div class="section" id="footer">
+    <div class="container has-text-centered">
+    {{ with .Site.Params.footerText }}
+        {{ . | markdownify }}
+    {{ else }}
+        <span class="footer-text">
+            <a href="/impressum"><p>Imprint | Impressum</p></a>
+            <br/>
+            {{ i18n "footer_text" . | markdownify }}
+        </span>
+    {{ end }}
+    </div>
+</div>
