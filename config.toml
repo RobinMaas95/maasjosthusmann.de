@@ -5,7 +5,7 @@ theme = "introduction"
 # googleAnalytics                 = ""                     # https://gohugo.io/templates/internal/#google-analytics
 
 [params]
-customCSS = ["custom.css"] # Include custom css files placed under assets/  
+customCSS = ["custom.css"] # Include custom css files placed under assets/   
 dateFormat = "Jan 2, 2006" 
 email = "" # E-mail address for contact section
 fadeIn = false # Turn on/off the fade-in effect
@@ -81,17 +81,13 @@ name = "Home"
 url = "/"
 weight = 0
 [[menu.main]]
-name = "My Journey"
-url = "/#my_journey"
-weight = 1
-[[menu.main]]
 name = "Tech-Stack"
 url = "/#tech_stack"
-weight = 2
+weight = 1
 [[menu.main]]
 name = "Contact"
 url = "/#contact"
-weight = 3
+weight = 2
 
 # We only use tag as a taxonomies
 # You can add more by yourself
