@@ -67,4 +67,5 @@ weight: 30
 <div>
 {{<badge "Jira" "https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&logo=jira&logoColor=white" "bagde">}}
 {{<badge "Docker" "https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" "bagde">}}
+{{<badge "Terraform" "https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=docker&logoColor=white" "bagde">}}
 </div>
