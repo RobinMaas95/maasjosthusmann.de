@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section class="section-card">
+  <div class="section-header">
+    <p class="section-kicker">Overview</p>
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="section-body markdown">
+    {{ .Content }}
+  </div>
+
+  {{ $pages := .RegularPages.ByWeight }}
+  {{ if gt (len $pages) 0 }}
+    <div class="card-grid">
+      {{ range $pages }}
+        <article class="content-card">
+          {{ with .Resources.ByType "image" }}
+            {{ with index . 0 }}
+              <img class="card-image" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+            {{ end }}
+          {{ end }}
+          <div class="content-card-body">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            {{ with .Params.project_timeframe }}<p class="meta">{{ . }}</p>{{ end }}
+            <div class="markdown">
+              {{ .Summary }}
+            </div>
+          </div>
+        </article>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+{{ end }}
