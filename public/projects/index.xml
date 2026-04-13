@@ -1,32 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Projects on Maasjosthusmann</title>
-    <link>http://localhost:1313/projects/</link>
-    <description>Recent content in Projects on Maasjosthusmann</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Photography</title>
-      <link>http://localhost:1313/projects/photography/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/photography/</guid>
-      <description>&lt;h2 id=&#34;sometimes-i-take-pictures&#34;&gt;Sometimes I take pictures&lt;/h2&gt;&#xA;&lt;p&gt;This project is about the pictures I take. Sometimes, they are pictures of cats.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Robin</title>
-      <link>http://localhost:1313/projects/robin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/robin/</guid>
-      <description>&lt;p&gt;bla blubb&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Writing</title>
-      <link>http://localhost:1313/projects/writing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/writing/</guid>
-      <description>&lt;p&gt;Aromatic aroma con panna, crema so coffee robust coffee barista, café au lait trifecta that strong blue mountain cortado aftertaste. Aroma extraction french press, skinny sweet, blue mountain cup roast barista, beans, extra cappuccino mug crema strong.&lt;/p&gt;&#xA;&lt;p&gt;To go viennese cream to go, flavour, so mocha as, carajillo iced et a siphon froth. Aged, eu, cup, brewed aroma kopi-luwak, coffee, id viennese french press brewed grounds acerbic froth. Decaffeinated acerbic, spoon beans seasonal, french press café au lait mazagran roast chicory, pumpkin spice galão as fair trade, dark irish cup ristretto half and half whipped shop. Latte instant black extra aroma, instant, extra robusta variety skinny shop aged cup ristretto foam cortado. Bar galão skinny saucer est affogato sugar caffeine chicory sugar coffee, seasonal barista french press acerbic in chicory robust.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects on Maasjosthusmann</title><link>https://IONOS_DEPLOY_NOW_SITE_URL/projects/</link><description>Recent content in Projects on Maasjosthusmann</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://IONOS_DEPLOY_NOW_SITE_URL/projects/index.xml" rel="self" type="application/rss+xml"/><item><title>Photography</title><link>https://IONOS_DEPLOY_NOW_SITE_URL/projects/photography/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://IONOS_DEPLOY_NOW_SITE_URL/projects/photography/</guid><description>&lt;h2 id="sometimes-i-take-pictures"&gt;Sometimes I take pictures&lt;/h2&gt;
+&lt;p&gt;This project is about the pictures I take. Sometimes, they are pictures of cats.&lt;/p&gt;</description></item><item><title>Robin</title><link>https://IONOS_DEPLOY_NOW_SITE_URL/projects/robin/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://IONOS_DEPLOY_NOW_SITE_URL/projects/robin/</guid><description>&lt;p&gt;bla blubb&lt;/p&gt;</description></item><item><title>Writing</title><link>https://IONOS_DEPLOY_NOW_SITE_URL/projects/writing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://IONOS_DEPLOY_NOW_SITE_URL/projects/writing/</guid><description>&lt;p&gt;Aromatic aroma con panna, crema so coffee robust coffee barista, café au lait trifecta that strong blue mountain cortado aftertaste. Aroma extraction french press, skinny sweet, blue mountain cup roast barista, beans, extra cappuccino mug crema strong.&lt;/p&gt;
+&lt;p&gt;To go viennese cream to go, flavour, so mocha as, carajillo iced et a siphon froth. Aged, eu, cup, brewed aroma kopi-luwak, coffee, id viennese french press brewed grounds acerbic froth. Decaffeinated acerbic, spoon beans seasonal, french press café au lait mazagran roast chicory, pumpkin spice galão as fair trade, dark irish cup ristretto half and half whipped shop. Latte instant black extra aroma, instant, extra robusta variety skinny shop aged cup ristretto foam cortado. Bar galão skinny saucer est affogato sugar caffeine chicory sugar coffee, seasonal barista french press acerbic in chicory robust.&lt;/p&gt;</description></item></channel></rss>
