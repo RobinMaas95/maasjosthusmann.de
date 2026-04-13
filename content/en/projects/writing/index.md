@@ -1,6 +1,10 @@
 ---
 title: "Writing"
 weight: 3
+build:
+  render: never
+  list: never
+  publishResources: false
 ---
 
 Aromatic aroma con panna, crema so coffee robust coffee barista, café au lait trifecta that strong blue mountain cortado aftertaste. Aroma extraction french press, skinny sweet, blue mountain cup roast barista, beans, extra cappuccino mug crema strong.

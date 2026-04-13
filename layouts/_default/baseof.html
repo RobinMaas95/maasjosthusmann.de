@@ -17,8 +17,6 @@
           {{ range site.Menus.main }}
             <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
           {{ end }}
-          <a href="{{ "/projects/" | relLangURL }}">Projects</a>
-          <a href="{{ "/blog/" | relLangURL }}">Blog</a>
           <a href="{{ "/impressum/" | relLangURL }}">Imprint</a>
           <a href="{{ "/privacy/" | relLangURL }}">Privacy</a>
         </nav>
