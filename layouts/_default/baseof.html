@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Lang | default site.LanguageCode | default "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    {{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with site.Params.favicon }}<link rel="icon" href="{{ . | relURL }}">{{ end }}
+    {{ $css := resources.Get "custom.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="{{ "/" | relLangURL }}">{{ site.Title }}</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          {{ range site.Menus.main }}
+            <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+          {{ end }}
+          <a href="{{ "/projects/" | relLangURL }}">Projects</a>
+          <a href="{{ "/blog/" | relLangURL }}">Blog</a>
+          <a href="{{ "/impressum/" | relLangURL }}">Imprint</a>
+          <a href="{{ "/privacy/" | relLangURL }}">Privacy</a>
+        </nav>
+      </header>
+
+      <main class="site-main">
+        {{ block "main" . }}{{ end }}
+      </main>
+
+      <footer class="site-footer">
+        <a href="{{ "/impressum/" | relLangURL }}">Imprint</a>
+        <a href="{{ "/privacy/" | relLangURL }}">Privacy</a>
+      </footer>
+    </div>
+  </body>
+</html>

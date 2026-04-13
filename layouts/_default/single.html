@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="section-card">
+  <div class="section-header">
+    <p class="section-kicker">{{ .Params.kicker | default (.Section | title) }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ with .Date }}<p class="meta">{{ .Format (site.Params.dateFormat | default "Jan 2, 2006") }}</p>{{ end }}
+  </div>
+
+  {{ with .Resources.ByType "image" }}
+    {{ with index . 0 }}
+      <img class="hero-image" src="{{ .RelPermalink }}" alt="{{ $.Title }}">
+    {{ end }}
+  {{ end }}
+
+  <div class="section-body markdown">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,29 @@
+{{ if . }}
+  {{ range . }}
+    <a class="social-link" href="{{ .url }}"{{ with .html_attributes }} {{ . | safeHTMLAttr }}{{ end }}>
+      <span class="social-icon" aria-hidden="true">
+        {{- if eq .icon "github" -}}
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.3 9.43 7.87 10.95.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.55-3.88-1.55-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.78 2.7 1.27 3.36.97.1-.75.4-1.27.72-1.56-2.56-.29-5.25-1.29-5.25-5.75 0-1.27.45-2.3 1.19-3.11-.12-.29-.52-1.47.11-3.07 0 0 .97-.31 3.19 1.19a10.95 10.95 0 0 1 5.8 0c2.22-1.5 3.19-1.19 3.19-1.19.63 1.6.23 2.78.11 3.07.74.81 1.19 1.84 1.19 3.11 0 4.47-2.69 5.45-5.26 5.74.41.36.77 1.07.77 2.16 0 1.56-.01 2.82-.01 3.2 0 .31.21.68.8.56A11.54 11.54 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/>
+          </svg>
+        {{- else if eq .icon "linkedin-in" -}}
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path d="M4.98 3.5A2.49 2.49 0 0 0 2.5 6a2.49 2.49 0 0 0 2.48 2.5A2.5 2.5 0 1 0 4.98 3.5ZM2.9 9.5h4.17v12H2.9Zm6.78 0h4v1.64h.06c.56-1.06 1.92-2.18 3.95-2.18 4.22 0 5 2.78 5 6.39v6.15h-4.17v-5.45c0-1.3-.02-2.98-1.82-2.98-1.82 0-2.1 1.42-2.1 2.88v5.55H9.68Z"/>
+          </svg>
+        {{- else if eq .icon "envelope" -}}
+          <svg viewBox="0 0 24 24" role="img" focusable="false">
+            <path d="M2.5 5.5h19a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-19a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1Zm0 2v.2l9.5 6.9 9.5-6.9v-.2Zm19 9.01V10.2l-8.91 6.47a1 1 0 0 1-1.18 0L2.5 10.2v6.31Z"/>
+          </svg>
+        {{- else -}}
+          <span class="social-fallback">{{ .icon }}</span>
+        {{- end -}}
+      </span>
+      <span class="social-label">
+        {{- if eq .icon "github" -}}GitHub
+        {{- else if eq .icon "linkedin-in" -}}LinkedIn
+        {{- else if eq .icon "envelope" -}}Email
+        {{- else -}}{{ .icon }}{{- end -}}
+      </span>
+    </a>
+  {{ end }}
+{{ end }}
