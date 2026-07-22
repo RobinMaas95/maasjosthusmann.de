@@ -55,25 +55,27 @@ const copy: Record<Language, Copy> = {
       { id: '02', title: 'Make the Path Reviewable', body: 'Deliver a narrow end-to-end change with explicit controls, verification, and a clear rollback story.', icon: 'viewColumns' },
       { id: '03', title: 'Leave the Team Stronger', body: 'Document the decision, expose the operational signals, and make the next change easier than the first.', icon: 'checkDouble' }
     ],
-    servicesTitle: 'Where I’m Useful',
+    servicesTitle: 'Infrastructure & Developer Experience',
     services: [
-      { id: '01', title: 'Platform Delivery', body: 'Secure, repeatable delivery from repository to production—with infrastructure, observability, and an operating model the team can own.' },
-      { id: '02', title: 'AI Platform Engineering', body: 'Practical AI foundations: provider integration, access controls, cost visibility, and a delivery practice that remains accountable.' },
-      { id: '03', title: 'Technical Advisory', body: 'Clear choices under real constraints. I turn ambiguous technical problems into focused decisions and a workable delivery sequence.' }
+      { id: '01', title: 'Platform Reliability & Delivery', body: 'Secure, repeatable delivery from repository to production—with reviewable infrastructure, observable systems, and a clear operating model.' },
+      { id: '02', title: 'Developer Experience', body: 'Platforms, local and per-PR environments, automation, and documentation that help engineers and data scientists do their best work.' },
+      { id: '03', title: 'AI Platform Engineering', body: 'Practical AI foundations: provider integration, access controls, cost visibility, and a delivery practice that remains accountable.' }
     ],
-    proofTitle: 'Selected Operational Work',
+    proofTitle: 'Selected Platform Work',
     proof: [
-      { id: '01', title: 'Governed Delivery Path', body: 'Maintained internal GitHub Actions runners and a secured catalogue of internally reviewed actions for a company-wide engineering workflow.' },
-      { id: '02', title: 'Reviewable Infrastructure', body: 'Maintains production Terraform Enterprise/Cloud code and state-backed infrastructure changes, with reviewable plans and operational ownership.' },
-      { id: '03', title: 'Controlled AI Gateway', body: 'Built and maintains a central LLM gateway for AWS Bedrock providers, with usage, cost, and access controls built into the platform.' }
+      { id: '01', title: 'Developer Platform as a Product', body: 'Builds platform services, development and per-PR environments, tooling, and documentation for developers and data scientists.' },
+      { id: '02', title: 'Managed Kubernetes Delivery', body: 'Operated DigitalOcean managed Kubernetes and OpenShift workloads, including Argo CD setup and day-to-day GitOps delivery.' },
+      { id: '03', title: 'Governed Delivery Infrastructure', body: 'Maintained internal GitHub Actions runners and a secured catalogue of internally reviewed actions for a company-wide engineering workflow.' },
+      { id: '04', title: 'Secure Platform Access', body: 'Configured Cloudflare DNS, Zero Trust, tunnels, and security rules to provide protected access to VPS services without public exposure.' }
     ],
     approachTitle: 'Agent-Assisted. Never Unaccountable.',
     approach: 'Claude Code, Pi, and OpenCode accelerate the work—not the responsibility. Agents produce reviewable changes; I understand the architecture and every changed line before a human-facing pull request exists.',
     capabilityTitle: 'Working Surface',
     capabilityGroups: [
-      { title: 'Delivery', items: ['GitHub Actions', 'Docker', 'Terraform Enterprise / Cloud'] },
-      { title: 'Operation', items: ['Kubernetes / OpenShift', 'OpenTelemetry', 'Grafana Cloud', 'Prometheus', 'Loki'] },
-      { title: 'AI & Data', items: ['Python', 'PostgreSQL', 'AWS Bedrock'] }
+      { title: 'Delivery Automation', items: ['GitHub Actions', 'Docker', 'Terraform Enterprise / Cloud', 'Argo CD'] },
+      { title: 'Platform Operation', items: ['DigitalOcean Kubernetes', 'OpenShift', 'OpenTelemetry', 'Grafana Cloud', 'Prometheus', 'Loki'] },
+      { title: 'Developer Experience', items: ['Platform Services', 'Local & Per-PR Environments', 'Internal CLI & Automation', 'Operational Documentation'] },
+      { title: 'Platform Security', items: ['Cloudflare DNS', 'Cloudflare Zero Trust', 'Cloudflare Tunnels', 'Cloudflare Workers / WAF'] }
     ],
     contactTitle: 'A Product Decision Should Not Become a Platform Emergency.',
     contactBody: 'Working through a product, platform, AI, or delivery decision? If the next step deserves a clear owner, let’s make it concrete.',
@@ -92,25 +94,27 @@ const copy: Record<Language, Copy> = {
       { id: '02', title: 'Weg Reviewbar Machen', body: 'Eine schmale End-to-End-Änderung mit expliziten Kontrollen, Verifikation und klarem Rollback liefern.', icon: 'viewColumns' },
       { id: '03', title: 'Team Stärker Hinterlassen', body: 'Entscheidung dokumentieren, operative Signale sichtbar machen und die nächste Änderung leichter als die erste machen.', icon: 'checkDouble' }
     ],
-    servicesTitle: 'Wobei Ich Helfe',
+    servicesTitle: 'Infrastruktur & Developer Experience',
     services: [
-      { id: '01', title: 'Plattform-Delivery', body: 'Sichere, wiederholbare Delivery vom Repository bis in die Produktion—mit Infrastruktur, Observability und einem Betriebsmodell, das das Team selbst tragen kann.' },
-      { id: '02', title: 'AI-Plattform-Engineering', body: 'Pragmatische Grundlagen für AI: Provider-Integration, Zugriffskontrollen, Kostentransparenz und eine Delivery-Praxis mit klarer Verantwortung.' },
-      { id: '03', title: 'Technische Beratung', body: 'Klare Entscheidungen unter echten Constraints. Ich mache aus unscharfen technischen Problemen fokussierte Entscheidungen und eine umsetzbare Lieferreihenfolge.' }
+      { id: '01', title: 'Plattform-Zuverlässigkeit & Delivery', body: 'Sichere, wiederholbare Delivery vom Repository bis in die Produktion—mit reviewbarer Infrastruktur, beobachtbaren Systemen und einem klaren Betriebsmodell.' },
+      { id: '02', title: 'Developer Experience', body: 'Plattformen, lokale und Per-PR-Umgebungen, Automatisierung und Dokumentation, die Entwicklern und Data Scientists bessere Arbeitsbedingungen geben.' },
+      { id: '03', title: 'AI-Plattform-Engineering', body: 'Pragmatische Grundlagen für AI: Provider-Integration, Zugriffskontrollen, Kostentransparenz und eine Delivery-Praxis mit klarer Verantwortung.' }
     ],
-    proofTitle: 'Ausgewählte Operative Arbeit',
+    proofTitle: 'Ausgewählte Plattform-Arbeit',
     proof: [
-      { id: '01', title: 'Kontrollierter Delivery-Weg', body: 'Betreut interne GitHub-Actions-Runner sowie einen sicherheitsgeprüften Katalog intern bereitgestellter Actions für unternehmensweite Engineering-Workflows.' },
-      { id: '02', title: 'Reviewbare Infrastruktur', body: 'Betreut produktiven Terraform-Enterprise-/Cloud-Code und zustandsbasierte Infrastrukturänderungen mit reviewbaren Plänen und operativer Verantwortung.' },
-      { id: '03', title: 'Kontrolliertes AI-Gateway', body: 'Entwickelt und betreut ein zentrales LLM-Gateway für AWS-Bedrock-Provider mit integrierten Nutzungs-, Kosten- und Zugriffskontrollen.' }
+      { id: '01', title: 'Developer-Plattform als Produkt', body: 'Entwickelt Plattform-Services, Entwicklungs- und Per-PR-Umgebungen, Tools und Dokumentation für Entwickler und Data Scientists.' },
+      { id: '02', title: 'Managed-Kubernetes-Delivery', body: 'Betreibt DigitalOceans Managed Kubernetes und OpenShift-Workloads, einschließlich Argo-CD-Setup und täglicher GitOps-Delivery.' },
+      { id: '03', title: 'Kontrollierte Delivery-Infrastruktur', body: 'Betreut interne GitHub-Actions-Runner sowie einen sicherheitsgeprüften Katalog intern bereitgestellter Actions für unternehmensweite Engineering-Workflows.' },
+      { id: '04', title: 'Sicherer Plattform-Zugang', body: 'Konfiguriert Cloudflare DNS, Zero Trust, Tunnels und Sicherheitsregeln für geschützten Zugriff auf VPS-Services ohne öffentliche Exponierung.' }
     ],
     approachTitle: 'Agent-Unterstützt. Nie Ohne Verantwortung.',
     approach: 'Claude Code, Pi und OpenCode beschleunigen die Arbeit—nicht die Verantwortung. Agents erzeugen reviewbare Änderungen; bevor ein Pull Request für andere Menschen entsteht, verstehe ich die Architektur und jede geänderte Zeile.',
     capabilityTitle: 'Arbeitsfelder',
     capabilityGroups: [
-      { title: 'Delivery', items: ['GitHub Actions', 'Docker', 'Terraform Enterprise / Cloud'] },
-      { title: 'Betrieb', items: ['Kubernetes / OpenShift', 'OpenTelemetry', 'Grafana Cloud', 'Prometheus', 'Loki'] },
-      { title: 'AI & Daten', items: ['Python', 'PostgreSQL', 'AWS Bedrock'] }
+      { title: 'Delivery-Automatisierung', items: ['GitHub Actions', 'Docker', 'Terraform Enterprise / Cloud', 'Argo CD'] },
+      { title: 'Plattform-Betrieb', items: ['DigitalOcean Kubernetes', 'OpenShift', 'OpenTelemetry', 'Grafana Cloud', 'Prometheus', 'Loki'] },
+      { title: 'Developer Experience', items: ['Plattform-Services', 'Lokale & Per-PR-Umgebungen', 'Interne CLI & Automatisierung', 'Betriebsdokumentation'] },
+      { title: 'Plattform-Sicherheit', items: ['Cloudflare DNS', 'Cloudflare Zero Trust', 'Cloudflare Tunnels', 'Cloudflare Workers / WAF'] }
     ],
     contactTitle: 'Eine Produktentscheidung Darf Nicht Zum Plattform-Notfall Werden.',
     contactBody: 'Ihr arbeitet an einer Produkt-, Plattform-, AI- oder Delivery-Entscheidung? Wenn der nächste Schritt klare Verantwortung verdient, machen wir ihn konkret.',
@@ -184,12 +188,12 @@ export function App({
             <VStack gap={5}>
               <Text type="code" color="accent">02 / {content.nav.proof.toUpperCase()}</Text>
               <Heading level={2} type="display-2" textWrap="balance">{content.proofTitle}</Heading>
-              <Grid columns={{ minWidth: 280, max: 3 }} gap={4}>{content.proof.map((item) => <VStack key={item.id} gap={3}><Text type="display-2" color="accent">{item.id}</Text><Heading level={3}>{item.title}</Heading><Text as="p" color="secondary">{item.body}</Text></VStack>)}</Grid>
+              <Grid columns={{ minWidth: 280, max: 2 }} gap={5}>{content.proof.map((item) => <VStack key={item.id} gap={3}><Text type="display-2" color="accent">{item.id}</Text><Heading level={3}>{item.title}</Heading><Text as="p" color="secondary">{item.body}</Text></VStack>)}</Grid>
             </VStack>
           </ContentFrame>
         </Section>
         <Section id="approach" padding={8} variant="muted"><ContentFrame><Grid columns={{ minWidth: 280, max: 2 }} gap={6} align="center"><VStack gap={3}><Text type="code" color="accent">03 / {content.nav.approach.toUpperCase()}</Text><Heading level={2} type="display-2" textWrap="balance">{content.approachTitle}</Heading></VStack><Text as="p" type="large" color="secondary">{content.approach}</Text></Grid></ContentFrame></Section>
-        <Section padding={8}><ContentFrame><VStack gap={4}><Text type="code" color="accent">04 / CAPABILITY</Text><Heading level={2}>{content.capabilityTitle}</Heading><Grid columns={{ minWidth: 280, max: 3 }} gap={3}>{content.capabilityGroups.map((group) => <VStack key={group.title} gap={2}><Text type="label" color="accent" weight="bold">{group.title}</Text><VStack gap={1}>{group.items.map((item) => <Text key={item} type="code" color="secondary">{item}</Text>)}</VStack></VStack>)}</Grid></VStack></ContentFrame></Section>
+        <Section padding={8}><ContentFrame><VStack gap={4}><Text type="code" color="accent">04 / CAPABILITY</Text><Heading level={2}>{content.capabilityTitle}</Heading><Grid columns={{ minWidth: 280, max: 2 }} gap={4}>{content.capabilityGroups.map((group) => <VStack key={group.title} gap={2}><Text type="label" color="accent" weight="bold">{group.title}</Text><VStack gap={1}>{group.items.map((item) => <Text key={item} type="code" color="secondary">{item}</Text>)}</VStack></VStack>)}</Grid></VStack></ContentFrame></Section>
         <Section id="contact" padding={10} variant="muted"><ContentFrame><Card padding={8} variant="blue" elevation="low"><VStack gap={4}><Text type="code">05 / {content.nav.contact.toUpperCase()}</Text><Heading level={2} type="display-2" textWrap="balance">{content.contactTitle}</Heading><Text as="p" type="large">{content.contactBody}</Text><Link href="mailto:hello@maasjosthusmann.de" isStandalone hasUnderline>{content.cta}</Link><HStack gap={2} wrap="wrap"><Link href="/impressum/">{content.legal.imprint}</Link><Link href="/privacy/">{content.legal.privacy}</Link><Link href="https://github.com/RobinMaas95/" isExternalLink>GitHub</Link><Link href="https://www.linkedin.com/in/robin-maasjosthusmann/" isExternalLink>LinkedIn</Link></HStack></VStack></Card></ContentFrame></Section>
       </VStack>
     </AppShell>
