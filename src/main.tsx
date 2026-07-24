@@ -6,11 +6,11 @@ import '@astryxdesign/core/astryx.css';
 import { Theme } from '@astryxdesign/core/theme';
 
 import { App } from './App';
-import { gothicTheme } from './theme.ts/gothicTheme';
+import { neutralTheme } from './neutral-theme/neutralTheme';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Theme theme={gothicTheme} mode="dark">
+    <Theme theme={neutralTheme} mode="light">
       <App />
     </Theme>
   </StrictMode>
