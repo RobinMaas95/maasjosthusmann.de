@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { initialLanguage, type Language } from '$lib/locale';
 
-	type Language = 'en' | 'de';
 	type Copy = {
 		nav: { services: string; proof: string; approach: string; contact: string };
 		eyebrow: string;
@@ -109,9 +109,7 @@
 	let content = $derived(copy[language]);
 
 	onMount(() => {
-		const stored = window.localStorage.getItem('preferred-language');
-		if (stored === 'de' || stored === 'en') language = stored;
-		else if (navigator.languages.some((value) => value.toLowerCase().startsWith('de'))) language = 'de';
+		language = initialLanguage(window.localStorage.getItem('preferred-language'), navigator.languages);
 	});
 
 	function selectLanguage(next: Language) {
