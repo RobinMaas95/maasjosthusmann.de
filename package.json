@@ -1,35 +1,30 @@
 {
   "name": "website-maasjosthusmann",
-  "version": "1.0.0",
-  "description": "Robin Maasjosthusmann's bilingual Platform & AI Engineer portfolio",
+  "version": "2.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev": "vite dev",
+    "build": "vite build",
     "preview": "vite preview",
-    "test": "vitest run"
-  },
-  "bugs": {
-    "url": "https://github.com/RobinMaas95/maasjosthusmann.de/issues"
-  },
-  "homepage": "https://github.com/RobinMaas95/maasjosthusmann.de#readme",
-  "dependencies": {
-    "@astryxdesign/core": "^0.2.0",
-    "lucide-react": "^0.468.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "test:unit": "vitest",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit -- --run && npm run test:e2e"
   },
   "devDependencies": {
-    "@playwright/test": "^1.62.1",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.2",
-    "@testing-library/user-event": "^14.6.1",
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
-    "@vitejs/plugin-react": "^5.2.0",
-    "jsdom": "^26.1.0",
-    "typescript": "^5.9.3",
-    "vite": "^7.3.6",
-    "vitest": "^3.2.7"
+    "@playwright/test": "^1.60.0",
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.63.0",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "@vitest/browser-playwright": "^4.1.8",
+    "playwright": "^1.60.0",
+    "svelte": "^5.56.1",
+    "svelte-check": "^4.6.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^4.1.8",
+    "vitest-browser-svelte": "^2.1.1"
   }
 }

@@ -1,15 +1,49 @@
 import { defineConfig } from 'vitest/config';
-import react from '@vitejs/plugin-react';
+import { playwright } from '@vitest/browser-playwright';
+import adapter from '@sveltejs/adapter-static';
+import { sveltekit } from '@sveltejs/kit/vite';
 
 export default defineConfig({
-  plugins: [react()],
-  test: {
-    environment: 'jsdom',
-    environmentOptions: {
-      jsdom: {
-        url: 'http://localhost'
-      }
-    },
-    setupFiles: ['./src/test/setup.ts']
-  }
+	plugins: [
+		sveltekit({
+			adapter: adapter({ pages: 'dist', assets: 'dist' }),
+			files: { assets: 'legal-static' },
+			prerender: {
+				handleHttpError: ({ path, message }) => {
+					if (path === '/impressum/' || path === '/privacy/') return;
+					throw new Error(message);
+				}
+			},
+			compilerOptions: {
+				runes: ({ filename }) => filename.split(/[/\\]/).includes('node_modules') ? undefined : true
+			}
+		})
+	],
+	test: {
+		expect: { requireAssertions: true },
+		projects: [
+			{
+				extends: './vite.config.ts',
+				test: {
+					name: 'client',
+					browser: {
+						enabled: true,
+						provider: playwright(),
+						instances: [{ browser: 'chromium', headless: true }]
+					},
+					include: ['src/**/*.svelte.{test,spec}.{js,ts}'],
+					exclude: ['src/lib/server/**']
+				}
+			},
+			{
+				extends: './vite.config.ts',
+				test: {
+					name: 'server',
+					environment: 'node',
+					include: ['src/**/*.{test,spec}.{js,ts}'],
+					exclude: ['src/**/*.svelte.{test,spec}.{js,ts}']
+				}
+			}
+		]
+	}
 });
