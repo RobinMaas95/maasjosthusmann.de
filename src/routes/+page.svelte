@@ -8,9 +8,7 @@
 		title: string;
 		introduction: string;
 		cta: string;
-		operatingTitle: string;
-		operatingBody: string;
-		workflow: { id: string; title: string; body: string }[];
+		portrait: { alt: string; caption: string };
 		servicesTitle: string;
 		services: { id: string; title: string; body: string }[];
 		proofTitle: string;
@@ -31,13 +29,10 @@
 			title: 'Platform & AI Engineer',
 			introduction: 'I’m Robin Maasjosthusmann, a freelance consultant helping teams turn product bets into operable software—through dependable delivery paths, governed AI capability, and technical decisions that survive contact with reality.',
 			cta: 'Start a Conversation',
-			operatingTitle: 'A delivery system, not a collection of tools.',
-			operatingBody: 'The goal is simple: turn a risky product decision into a small, reviewable, observable change the team can own after I leave.',
-			workflow: [
-				{ id: '01', title: 'Frame the Constraint', body: 'Find the irreducible product, operational, and ownership constraints before choosing technology.' },
-				{ id: '02', title: 'Make the Path Reviewable', body: 'Deliver a narrow end-to-end change with explicit controls, verification, and a clear rollback story.' },
-				{ id: '03', title: 'Leave the Team Stronger', body: 'Document the decision, expose operational signals, and make the next change easier than the first.' }
-			],
+			portrait: {
+				alt: 'Robin Maasjosthusmann smiling in a bright office',
+				caption: 'I work directly with the people accountable for the product and the platform—not from a slide deck.'
+			},
 			servicesTitle: 'Infrastructure & Developer Experience',
 			services: [
 				{ id: '01', title: 'Platform Reliability & Delivery', body: 'Secure, repeatable delivery from repository to production—with reviewable infrastructure, observable systems, and a clear operating model.' },
@@ -70,13 +65,10 @@
 			title: 'Plattform- & AI-Engineer',
 			introduction: 'Ich bin Robin Maasjosthusmann, freiberuflicher Consultant für Teams, die Produktideen in betreibbare Software verwandeln wollen—mit belastbaren Delivery-Wegen, kontrollierter AI-Funktionalität und technischen Entscheidungen, die in der Realität bestehen.',
 			cta: 'Gespräch Starten',
-			operatingTitle: 'Ein Delivery-System, keine Sammlung von Tools.',
-			operatingBody: 'Das Ziel ist einfach: Eine riskante Produktentscheidung wird zu einer kleinen, reviewbaren und beobachtbaren Änderung, die das Team auch ohne mich tragen kann.',
-			workflow: [
-				{ id: '01', title: 'Constraint Klären', body: 'Produkt-, Betriebs- und Ownership-Constraints identifizieren, bevor Technologie gewählt wird.' },
-				{ id: '02', title: 'Weg Reviewbar Machen', body: 'Eine schmale End-to-End-Änderung mit expliziten Kontrollen, Verifikation und klarem Rollback liefern.' },
-				{ id: '03', title: 'Team Stärker Hinterlassen', body: 'Entscheidung dokumentieren, operative Signale sichtbar machen und die nächste Änderung leichter als die erste machen.' }
-			],
+			portrait: {
+				alt: 'Robin Maasjosthusmann smiling in a bright office',
+				caption: 'Ich arbeite direkt mit den Menschen, die Verantwortung für Produkt und Plattform tragen—nicht aus einem Foliensatz heraus.'
+			},
 			servicesTitle: 'Infrastruktur & Developer Experience',
 			services: [
 				{ id: '01', title: 'Plattform-Zuverlässigkeit & Delivery', body: 'Sichere, wiederholbare Delivery vom Repository bis in die Produktion—mit reviewbarer Infrastruktur, beobachtbaren Systemen und einem klaren Betriebsmodell.' },
@@ -148,16 +140,16 @@
 			<p class="lead">{content.introduction}</p>
 			<a class="text-link" href="mailto:hello@maasjosthusmann.de">{content.cta}<span aria-hidden="true"> ↗</span></a>
 		</section>
-		<aside class="operating-model" aria-labelledby="operating-title">
-			<p class="section-label">Operating model / 01</p>
-			<h2 id="operating-title">{content.operatingTitle}</h2>
-			<p>{content.operatingBody}</p>
-			<ol>
-				{#each content.workflow as step (step.id)}
-					<li><strong>{step.id} · {step.title}</strong><span>{step.body}</span></li>
-				{/each}
-			</ol>
-		</aside>
+		<figure class="portrait">
+			<img
+				alt={content.portrait.alt}
+				fetchpriority="high"
+				height="4032"
+				src="/images/robin-maasjosthusmann.jpg"
+				width="3024"
+			/>
+			<figcaption>{content.portrait.caption}</figcaption>
+		</figure>
 	</section>
 
 	<section class="band" id="services" aria-labelledby="services-title">
@@ -249,7 +241,7 @@
 	.language-switcher { border: 0; display: flex; gap: 0.25rem; margin: 0 0 0 auto; padding: 0; }
 	.language-switcher button { background: transparent; border: 0; border-radius: 0.35rem; color: var(--muted); cursor: pointer; font-size: 0.68rem; font-weight: 750; padding: 0.38rem 0.45rem; }
 	.language-switcher button[aria-pressed='true'] { background: var(--ink); color: var(--surface); }
-	.hero { align-items: center; display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.9fr); min-height: 30rem; padding-bottom: 6rem; padding-top: 6rem; }
+	.hero { align-items: center; display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr); min-height: 30rem; padding-bottom: 6rem; padding-top: 6rem; }
 	.hero-copy { max-width: 34rem; }
 	.eyebrow, .section-label, .index { color: var(--accent); font-size: 0.69rem; font-weight: 700; letter-spacing: 0.07em; margin: 0 0 1.25rem; text-transform: uppercase; }
 	h1, h2, h3, p { margin-top: 0; }
@@ -259,12 +251,10 @@
 	h3 { font-size: 1rem; letter-spacing: -0.025em; margin-bottom: 0.65rem; }
 	.lead, .approach-copy { color: var(--muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.6rem; max-width: 37rem; }
 	.text-link { color: var(--ink); font-size: 0.85rem; font-weight: 750; text-decoration: underline; text-underline-offset: 0.25em; }
-	.operating-model { background: var(--surface); box-shadow: var(--shadow); padding: 2rem; }
-	.operating-model h2 { font-family: Inter, ui-sans-serif, sans-serif; font-size: 1.25rem; letter-spacing: -0.035em; line-height: 1.15; margin-bottom: 0.8rem; }
-	.operating-model > p:not(.section-label), .operating-model li span, article p { color: var(--muted); font-size: 0.79rem; line-height: 1.55; }
-	.operating-model ol { display: grid; gap: 1rem; list-style: none; margin: 1.75rem 0 0; padding: 0; }
-	.operating-model li { display: grid; gap: 0.25rem; }
-	.operating-model strong { font-size: 0.76rem; }
+	.portrait { margin: 0; }
+	.portrait img { display: block; height: min(32rem, 54vw); object-fit: cover; object-position: center 18%; width: 100%; }
+	.portrait figcaption { border-left: 2px solid var(--accent); color: var(--muted); font-size: 0.78rem; line-height: 1.55; margin: 1.25rem 0 0 1rem; max-width: 26rem; padding-left: 0.9rem; }
+	article p { color: var(--muted); font-size: 0.79rem; line-height: 1.55; }
 	.band, .contact-band { background: var(--band); }
 	.section-content { padding-bottom: 5.5rem; padding-top: 5.5rem; }
 	.services-grid, .proof-grid, .capability-grid { display: grid; gap: 2.25rem 1.75rem; }
@@ -292,6 +282,7 @@
 		.navigation-links a { font-size: 0.67rem; }
 		.hero, .approach-grid { grid-template-columns: 1fr; }
 		.hero { gap: 2rem; min-height: auto; padding-bottom: 4rem; padding-top: 4rem; }
+		.portrait img { height: auto; }
 		.services-grid, .proof-grid, .capability-grid { grid-template-columns: 1fr; }
 		.section-content, .approach-grid { padding-bottom: 4rem; padding-top: 4rem; }
 	}
