@@ -9,10 +9,11 @@
 		introduction: string;
 		cta: string;
 		portrait: { alt: string; caption: string };
+		about: { label: string; title: string; body: string };
 		servicesTitle: string;
 		services: { id: string; title: string; body: string }[];
 		proofTitle: string;
-		proof: { id: string; title: string; body: string }[];
+		proof: { id: string; focus: string; title: string; body: string }[];
 		approachTitle: string;
 		approach: string;
 		capabilityTitle: string;
@@ -33,18 +34,23 @@
 				alt: 'Robin Maasjosthusmann smiling in a bright office',
 				caption: 'I work directly with the people accountable for the product and the platform—not from a slide deck.'
 			},
+			about: {
+				label: 'About',
+				title: 'A practical partner in the work.',
+				body: 'I’m Robin, an independent Platform & AI Engineer working remotely with teams across Germany and the EU. I work close to the code and the operating reality: clarify the decision, make the change, and leave the team able to run it.'
+			},
 			servicesTitle: 'Infrastructure & Developer Experience',
 			services: [
 				{ id: '01', title: 'Platform Reliability & Delivery', body: 'Secure, repeatable delivery from repository to production—with reviewable infrastructure, observable systems, and a clear operating model.' },
 				{ id: '02', title: 'Developer Experience', body: 'Platforms, local and per-PR environments, automation, and documentation that help engineers and data scientists do their best work.' },
 				{ id: '03', title: 'AI Platform Engineering', body: 'Practical AI foundations: provider integration, access controls, cost visibility, and a delivery practice that remains accountable.' }
 			],
-			proofTitle: 'Selected Platform Work',
+			proofTitle: 'Selected Engagements',
 			proof: [
-				{ id: '01', title: 'Developer Platform as a Product', body: 'Builds platform services, development and per-PR environments, tooling, and documentation for developers and data scientists.' },
-				{ id: '02', title: 'Managed Kubernetes Delivery', body: 'Operated DigitalOcean managed Kubernetes and OpenShift workloads, including Argo CD setup and day-to-day GitOps delivery.' },
-				{ id: '03', title: 'Governed Delivery Infrastructure', body: 'Maintained internal GitHub Actions runners and a secured catalogue of internally reviewed actions for a company-wide engineering workflow.' },
-				{ id: '04', title: 'Secure Platform Access', body: 'Configured Cloudflare DNS, Zero Trust, tunnels, and security rules to provide protected access to VPS services without public exposure.' }
+				{ id: '01', focus: 'Developer experience', title: 'Developer Platform as a Product', body: 'Built platform services, development and per-PR environments, tooling, and documentation for developers and data scientists.' },
+				{ id: '02', focus: 'Delivery', title: 'Managed Kubernetes Delivery', body: 'Operated DigitalOcean managed Kubernetes and OpenShift workloads, including Argo CD setup and day-to-day GitOps delivery.' },
+				{ id: '03', focus: 'Engineering governance', title: 'Governed Delivery Infrastructure', body: 'Maintained internal GitHub Actions runners and a secured catalogue of internally reviewed actions for a company-wide engineering workflow.' },
+				{ id: '04', focus: 'Platform security', title: 'Secure Platform Access', body: 'Configured Cloudflare DNS, Zero Trust, tunnels, and security rules for protected access to VPS services without public exposure.' }
 			],
 			approachTitle: 'Agent-Assisted. Never Unaccountable.',
 			approach: 'Claude Code, Pi, and OpenCode accelerate the work—not the responsibility. Agents produce reviewable changes; I understand the architecture and every changed line before a human-facing pull request exists.',
@@ -69,18 +75,23 @@
 				alt: 'Robin Maasjosthusmann smiling in a bright office',
 				caption: 'Ich arbeite direkt mit den Menschen, die Verantwortung für Produkt und Plattform tragen—nicht aus einem Foliensatz heraus.'
 			},
+			about: {
+				label: 'Über mich',
+				title: 'Ein pragmatischer Partner in der Umsetzung.',
+				body: 'Ich bin Robin, unabhängiger Plattform- & AI-Engineer und arbeite remote mit Teams in Deutschland und der EU. Ich arbeite nah am Code und an der betrieblichen Realität: Entscheidung klären, Änderung umsetzen und das Team befähigen, sie selbst zu betreiben.'
+			},
 			servicesTitle: 'Infrastruktur & Developer Experience',
 			services: [
 				{ id: '01', title: 'Plattform-Zuverlässigkeit & Delivery', body: 'Sichere, wiederholbare Delivery vom Repository bis in die Produktion—mit reviewbarer Infrastruktur, beobachtbaren Systemen und einem klaren Betriebsmodell.' },
 				{ id: '02', title: 'Developer Experience', body: 'Plattformen, lokale und Per-PR-Umgebungen, Automatisierung und Dokumentation, die Entwicklern und Data Scientists bessere Arbeitsbedingungen geben.' },
 				{ id: '03', title: 'AI-Plattform-Engineering', body: 'Pragmatische Grundlagen für AI: Provider-Integration, Zugriffskontrollen, Kostentransparenz und eine Delivery-Praxis mit klarer Verantwortung.' }
 			],
-			proofTitle: 'Ausgewählte Plattform-Arbeit',
+			proofTitle: 'Ausgewählte Mandate',
 			proof: [
-				{ id: '01', title: 'Developer-Plattform als Produkt', body: 'Entwickelt Plattform-Services, Entwicklungs- und Per-PR-Umgebungen, Tools und Dokumentation für Entwickler und Data Scientists.' },
-				{ id: '02', title: 'Managed-Kubernetes-Delivery', body: 'Betreibt DigitalOceans Managed Kubernetes und OpenShift-Workloads, einschließlich Argo-CD-Setup und täglicher GitOps-Delivery.' },
-				{ id: '03', title: 'Kontrollierte Delivery-Infrastruktur', body: 'Betreut interne GitHub-Actions-Runner sowie einen sicherheitsgeprüften Katalog intern bereitgestellter Actions für unternehmensweite Engineering-Workflows.' },
-				{ id: '04', title: 'Sicherer Plattform-Zugang', body: 'Konfiguriert Cloudflare DNS, Zero Trust, Tunnels und Sicherheitsregeln für geschützten Zugriff auf VPS-Services ohne öffentliche Exponierung.' }
+				{ id: '01', focus: 'Developer Experience', title: 'Developer-Plattform als Produkt', body: 'Entwickelt Plattform-Services, Entwicklungs- und Per-PR-Umgebungen, Tools und Dokumentation für Entwickler und Data Scientists.' },
+				{ id: '02', focus: 'Delivery', title: 'Managed-Kubernetes-Delivery', body: 'Betreibt DigitalOceans Managed Kubernetes und OpenShift-Workloads, einschließlich Argo-CD-Setup und täglicher GitOps-Delivery.' },
+				{ id: '03', focus: 'Engineering-Governance', title: 'Kontrollierte Delivery-Infrastruktur', body: 'Betreut interne GitHub-Actions-Runner sowie einen sicherheitsgeprüften Katalog intern bereitgestellter Actions für unternehmensweite Engineering-Workflows.' },
+				{ id: '04', focus: 'Plattform-Sicherheit', title: 'Sicherer Plattform-Zugang', body: 'Konfiguriert Cloudflare DNS, Zero Trust, Tunnels und Sicherheitsregeln für geschützten Zugriff auf VPS-Services ohne öffentliche Exponierung.' }
 			],
 			approachTitle: 'Agent-Unterstützt. Nie Ohne Verantwortung.',
 			approach: 'Claude Code, Pi und OpenCode beschleunigen die Arbeit—nicht die Verantwortung. Agents erzeugen reviewbare Änderungen; bevor ein Pull Request für andere Menschen entsteht, verstehe ich die Architektur und jede geänderte Zeile.',
@@ -124,6 +135,18 @@
 			<li><a href="#proof">{content.nav.proof}</a></li>
 			<li><a href="#approach">{content.nav.approach}</a></li>
 		</ul>
+		<ul class="social-links" aria-label="Social links">
+			<li>
+				<a aria-label="GitHub profile (opens in new tab)" href="https://github.com/RobinMaas95/" rel="noreferrer" target="_blank">
+					<img alt="" height="288" src="/images/github-invertocat-black.png" width="294" />
+				</a>
+			</li>
+			<li>
+				<a aria-label="LinkedIn profile (opens in new tab)" href="https://www.linkedin.com/in/robin-maasjosthusmann/" rel="noreferrer" target="_blank">
+					<img alt="" height="779" src="/images/linkedin-inbug-black.png" width="840" />
+				</a>
+			</li>
+		</ul>
 		<fieldset class="language-switcher">
 			<legend class="sr-only">Language</legend>
 			<button aria-pressed={language === 'de'} onclick={() => selectLanguage('de')}>DE</button>
@@ -152,6 +175,12 @@
 		</figure>
 	</section>
 
+	<section class="about content-frame" aria-labelledby="about-title">
+		<p class="section-label">{content.about.label}</p>
+		<h2 id="about-title">{content.about.title}</h2>
+		<p>{content.about.body}</p>
+	</section>
+
 	<section class="band" id="services" aria-labelledby="services-title">
 		<section class="content-frame section-content">
 			<p class="section-label">01 / {content.nav.services}</p>
@@ -175,6 +204,7 @@
 			{#each content.proof as item (item.id)}
 				<article>
 					<p class="proof-index">{item.id}</p>
+					<p class="proof-focus">{item.focus}</p>
 					<h3>{item.title}</h3>
 					<p>{item.body}</p>
 				</article>
@@ -212,10 +242,8 @@
 			<p>{content.contactBody}</p>
 			<a class="text-link" href="mailto:hello@maasjosthusmann.de">{content.cta}<span aria-hidden="true"> ↗</span></a>
 			<footer>
-				<a href="/impressum/">{content.legal.imprint}</a>
-				<a href="/privacy/">{content.legal.privacy}</a>
-				<a href="https://github.com/RobinMaas95/" rel="noreferrer" target="_blank">GitHub<span class="sr-only"> (opens in new tab)</span></a>
-				<a href="https://www.linkedin.com/in/robin-maasjosthusmann/" rel="noreferrer" target="_blank">LinkedIn<span class="sr-only"> (opens in new tab)</span></a>
+				<a href="/impressum/index.html">{content.legal.imprint}</a>
+				<a href="/privacy/index.html">{content.legal.privacy}</a>
 			</footer>
 		</section>
 	</section>
@@ -234,11 +262,14 @@
 	header { border-bottom: 1px solid var(--line); }
 	nav, .content-frame { margin: 0 auto; max-width: 68rem; padding-left: 1.5rem; padding-right: 1.5rem; }
 	nav { align-items: center; display: flex; gap: 1.25rem; min-height: 4rem; }
-	.wordmark { font-size: 0.75rem; font-weight: 750; letter-spacing: -0.02em; text-decoration: none; white-space: nowrap; }
-	.navigation-links { display: flex; gap: 0.75rem; list-style: none; margin: 0; padding: 0; }
-	.navigation-links a, footer a { color: var(--muted); font-size: 0.75rem; text-decoration: none; }
-	.navigation-links a:hover, footer a:hover, .text-link:hover { text-decoration: underline; text-underline-offset: 0.25em; }
-	.language-switcher { border: 0; display: flex; gap: 0.25rem; margin: 0 0 0 auto; padding: 0; }
+	.wordmark { font-size: 0.75rem; font-weight: 750; letter-spacing: -0.02em; line-height: 1; text-decoration: none; transform: translateY(0.1rem); white-space: nowrap; }
+	.navigation-links, .social-links { display: flex; gap: 0.75rem; list-style: none; margin: 0; padding: 0; }
+	.social-links { margin-left: auto; }
+	.navigation-links a, .social-links a, footer a { color: var(--muted); font-size: 0.75rem; line-height: 1; text-decoration: none; }
+	.social-links a { align-items: center; display: flex; height: 1rem; }
+	.social-links img { display: block; height: 0.9rem; width: auto; }
+	.navigation-links a:hover, .social-links a:hover, footer a:hover, .text-link:hover { text-decoration: underline; text-underline-offset: 0.25em; }
+	.language-switcher { border: 0; display: flex; gap: 0.25rem; margin: 0; padding: 0; }
 	.language-switcher button { background: transparent; border: 0; border-radius: 0.35rem; color: var(--muted); cursor: pointer; font-size: 0.68rem; font-weight: 750; padding: 0.38rem 0.45rem; }
 	.language-switcher button[aria-pressed='true'] { background: var(--ink); color: var(--surface); }
 	.hero { align-items: center; display: grid; gap: 3rem; grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.72fr); min-height: 30rem; padding-bottom: 6rem; padding-top: 6rem; }
@@ -254,6 +285,10 @@
 	.portrait { margin: 0; }
 	.portrait img { display: block; height: min(32rem, 54vw); object-fit: cover; object-position: center 18%; width: 100%; }
 	.portrait figcaption { border-left: 2px solid var(--accent); color: var(--muted); font-size: 0.78rem; line-height: 1.55; margin: 1.25rem 0 0 1rem; max-width: 26rem; padding-left: 0.9rem; }
+	.about { display: grid; gap: 2rem; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr); padding-bottom: 5.5rem; padding-top: 5.5rem; }
+	.about .section-label { grid-column: 1 / -1; margin-bottom: 0; }
+	.about h2 { margin: 0; }
+	.about > p:not(.section-label) { color: var(--muted); font-size: 1rem; line-height: 1.6; margin: 0; max-width: 38rem; }
 	article p { color: var(--muted); font-size: 0.79rem; line-height: 1.55; }
 	.band, .contact-band { background: var(--band); }
 	.section-content { padding-bottom: 5.5rem; padding-top: 5.5rem; }
@@ -263,6 +298,7 @@
 	.services-grid article, .proof-grid article, .capability-grid article { min-width: 0; }
 	.index { margin-bottom: 1rem; }
 	.proof-index { color: var(--accent); font-family: Georgia, serif; font-size: 2.7rem; letter-spacing: -0.07em; margin-bottom: 0.65rem; }
+	.proof-focus { color: var(--accent); font-size: 0.69rem; font-weight: 700; letter-spacing: 0.07em; margin-bottom: 0.85rem; text-transform: uppercase; }
 	.approach-grid { align-items: center; display: grid; gap: 3rem; grid-template-columns: 1fr 1fr; padding-bottom: 5.5rem; padding-top: 5.5rem; }
 	.approach-grid h2 { margin-bottom: 0; }
 	.approach-copy { margin: 0; }
@@ -276,14 +312,17 @@
 	.contact-panel footer a { color: var(--ink); }
 	.sr-only { clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
 	@media (max-width: 42rem) {
-		nav { gap: 0.8rem; min-height: 3.5rem; }
-		.wordmark { font-size: 0.65rem; }
-		.navigation-links { gap: 0.5rem; }
-		.navigation-links a { font-size: 0.67rem; }
+		nav { gap: 0.4rem; min-height: 3.5rem; padding-left: 0.9rem; padding-right: 0.9rem; }
+		.wordmark { font-size: 0.58rem; }
+		.navigation-links, .social-links { gap: 0.35rem; }
+		.navigation-links a, .social-links a { font-size: 0.6rem; }
+		.language-switcher { gap: 0.1rem; }
+		.language-switcher button { font-size: 0.6rem; padding: 0.25rem; }
 		.hero, .approach-grid { grid-template-columns: 1fr; }
 		.hero { gap: 2rem; min-height: auto; padding-bottom: 4rem; padding-top: 4rem; }
 		.portrait img { height: auto; }
 		.services-grid, .proof-grid, .capability-grid { grid-template-columns: 1fr; }
+		.about { grid-template-columns: 1fr; padding-bottom: 4rem; padding-top: 4rem; }
 		.section-content, .approach-grid { padding-bottom: 4rem; padding-top: 4rem; }
 	}
 </style>
