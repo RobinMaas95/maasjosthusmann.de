@@ -45,21 +45,25 @@
 				{ id: '02', title: 'Developer Experience', body: 'Development platforms, remote development environments and PR previews, automation, and documentation that let engineers and data scientists do their best work.' },
 				{ id: '03', title: 'AI Platform Engineering', body: 'Practical AI foundations: provider integration, access control, cost visibility, and delivery practices where responsibility stays clear.' }
 			],
-			proofTitle: 'Selected Engagements',
+			proofTitle: 'Selected Work',
 			proof: [
-				{ id: '01', focus: 'Developer experience', title: 'Developer Platform as a Product', body: 'Built platform services, development and per-PR environments, tooling, and documentation for developers and data scientists.' },
-				{ id: '02', focus: 'Delivery', title: 'Managed Kubernetes Delivery', body: 'Operated DigitalOcean managed Kubernetes and OpenShift workloads, including Argo CD setup and day-to-day GitOps delivery.' },
-				{ id: '03', focus: 'Engineering governance', title: 'Governed Delivery Infrastructure', body: 'Maintained internal GitHub Actions runners and a secured catalogue of internally reviewed actions for a company-wide engineering workflow.' },
-				{ id: '04', focus: 'Platform security', title: 'Secure Platform Access', body: 'Configured Cloudflare DNS, Zero Trust, tunnels, and security rules for protected access to VPS services without public exposure.' }
+				{ id: '01', focus: 'Platform operation · Consulting', title: 'Business Automation on Kubernetes', body: 'Maintain a Kubernetes environment and the automation applications running on it, written in Python. Calls range across Salesforce, Microsoft 365, and GCP, from classic workflow automation to AI-backed use cases.' },
+				{ id: '02', focus: 'Observability · Consulting', title: 'Cross-Cloud Log Streaming', body: 'Built log streaming from a DigitalOcean Kubernetes cluster into GCP Cloud Logging, authenticated via Workload Identity Federation (WIF) instead of long-lived tokens. Dashboards and log-based alerts on top.' },
+				{ id: '03', focus: 'AI platform · In-house', title: 'LLM Gateway for AI Coding Tools', body: 'Part of the team building and running an LLM gateway as a central hub for AI coding tools. One API server for multiple model backends, with cost management, allocation, and access control built in. Currently in beta with 50–60 engineers.' },
+				{ id: '04', focus: 'Developer experience · In-house', title: 'Remote Developer Platform', body: 'Part of the team maintaining a remote developer platform based on EC2 instances, used by around 300 engineers and data scientists for their day-to-day development work.' },
+				{ id: '05', focus: 'CI platform · In-house', title: 'GitHub Actions Runner Infrastructure', body: 'Part of the team operating a self-hosted runner infrastructure connected to the company’s GitHub Enterprise Server, serving several hundred users. A custom-written management server on managed OpenShift spins the runner pods up and down on demand.' },
+				{ id: '06', focus: 'Delivery · In-house', title: 'Kubernetes Delivery at Pace', body: 'As lead architect for everything outside Salesforce at a legal-tech firm, built CI/CD with GitHub Actions and Argo CD. Multiple production releases a day, guarded by several hundred automated tests.' }
 			],
 			approachTitle: 'Understand Deeply. Choose Deliberately. Deliver in Steps.',
 			approach: 'Every engagement starts with understanding: the subject, the constraints, the technology options. I choose the best fit, and I break even the biggest problem into steps a team can deliver and run. AI coding agents are part of that work. They write a lot of the code, and they make it considerably faster. What they don’t do is take responsibility. Every change that reaches your repository has been read, understood, and defended by me. You get the speed; the accountability stays mine.',
 			capabilityTitle: 'Toolbox',
 			capabilityGroups: [
-				{ title: 'Delivery Automation', items: ['GitHub Actions', 'Docker', 'Terraform Enterprise / Cloud', 'Argo CD'] },
-				{ title: 'Platform Operation', items: ['DigitalOcean Kubernetes', 'OpenShift', 'OpenTelemetry', 'Grafana Cloud', 'Prometheus', 'Loki'] },
-				{ title: 'Developer Experience', items: ['Platform Services', 'Local & Per-PR Environments', 'Internal CLI & Automation', 'Operational Documentation'] },
-				{ title: 'Platform Security', items: ['Cloudflare DNS', 'Cloudflare Zero Trust', 'Cloudflare Tunnels', 'Cloudflare Workers / WAF'] }
+				{ title: 'Delivery Automation', items: ['GitHub Actions', 'GitHub Enterprise Server', 'Docker', 'Terraform (Enterprise & S3 backend)', 'Argo CD', 'Helm'] },
+				{ title: 'AI Platforms', items: ['AWS Bedrock', 'Custom LLM Gateways', 'Pi (Coding Agent)', 'Claude Code', 'OpenCode'] },
+				{ title: 'Platform Operation', items: ['AWS EC2', 'Google Cloud Operations', 'DigitalOcean Kubernetes', 'Azure Kubernetes Service (AKS)', 'OpenShift', 'OpenTelemetry', 'Prometheus / Grafana / Loki'] },
+				{ title: 'Developer Experience', items: ['Remote Development Environments', 'VS Code Remote & Web IDEs', 'PR Preview Environments', 'Custom CLI & Automation Tooling', 'Docs as Code (mkdocs)'] },
+				{ title: 'Platform Security', items: ['Cloudflare DNS', 'Cloudflare Zero Trust', 'Cloudflare Tunnels', 'Cloudflare Workers / WAF', 'Workload Identity Federation (WIF)'] },
+				{ title: 'Languages & Frameworks', items: ['Python (Primary)', 'Go', 'Svelte / SvelteKit'] }
 			],
 			contactTitle: 'A Product Decision Should Not Become a Platform Emergency.',
 			contactBody: 'Working through a product, platform, AI, or delivery decision? I take on a small number of consulting engagements alongside my day job: advisory, architecture reviews, and focused build projects. Let’s make the next step concrete.',
