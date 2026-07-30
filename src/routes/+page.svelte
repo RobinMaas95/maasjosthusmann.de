@@ -26,24 +26,24 @@
 	const copy: Record<Language, Copy> = {
 		en: {
 			nav: { services: 'Services', proof: 'Proof', approach: 'Approach', contact: 'Contact' },
-			eyebrow: 'Freelance Consultant · Remote · Germany / EU',
+			eyebrow: 'Independent Consultant · Remote · Germany / EU',
 			title: 'Platform & AI Engineer',
-			introduction: 'I’m Robin Maasjosthusmann, a freelance consultant helping teams turn product bets into operable software—through dependable delivery paths, governed AI capability, and technical decisions that survive contact with reality.',
+			introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams ship software they can actually run. Dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
 			cta: 'Start a Conversation',
 			portrait: {
 				alt: 'Robin Maasjosthusmann smiling in a bright office',
-				caption: 'I work directly with the people accountable for the product and the platform—not from a slide deck.'
+				caption: 'I work directly with the people who own the product and the platform.'
 			},
 			about: {
 				label: 'About',
 				title: 'A practical partner in the work.',
-				body: 'I’m Robin, an independent Platform & AI Engineer working remotely with teams across Germany and the EU. I work close to the code and the operating reality: clarify the decision, make the change, and leave the team able to run it.'
+				body: 'I’m Robin, an independent Platform & AI Engineer working remotely from Germany. Over the past ten years I’ve worked with teams across the EU as a software engineer, data scientist, and platform architect, in industries from telecom to insurance. Today I’m part of the team running developer platforms and AI infrastructure for hundreds of engineers as my day job; through my own consultancy I take on a small number of selected engagements alongside. I stay close to the code and the operating reality: clarify the decision, make the change, and leave the team able to run it.'
 			},
 			servicesTitle: 'Infrastructure & Developer Experience',
 			services: [
-				{ id: '01', title: 'Platform Reliability & Delivery', body: 'Secure, repeatable delivery from repository to production—with reviewable infrastructure, observable systems, and a clear operating model.' },
-				{ id: '02', title: 'Developer Experience', body: 'Platforms, local and per-PR environments, automation, and documentation that help engineers and data scientists do their best work.' },
-				{ id: '03', title: 'AI Platform Engineering', body: 'Practical AI foundations: provider integration, access controls, cost visibility, and a delivery practice that remains accountable.' }
+				{ id: '01', title: 'Platform Reliability & Delivery', body: 'Secure, repeatable delivery from commit to production: reviewable infrastructure, observable systems, and a clear operating model.' },
+				{ id: '02', title: 'Developer Experience', body: 'Development platforms, remote development environments and PR previews, automation, and documentation that let engineers and data scientists do their best work.' },
+				{ id: '03', title: 'AI Platform Engineering', body: 'Practical AI foundations: provider integration, access control, cost visibility, and delivery practices where responsibility stays clear.' }
 			],
 			proofTitle: 'Selected Engagements',
 			proof: [
@@ -52,9 +52,9 @@
 				{ id: '03', focus: 'Engineering governance', title: 'Governed Delivery Infrastructure', body: 'Maintained internal GitHub Actions runners and a secured catalogue of internally reviewed actions for a company-wide engineering workflow.' },
 				{ id: '04', focus: 'Platform security', title: 'Secure Platform Access', body: 'Configured Cloudflare DNS, Zero Trust, tunnels, and security rules for protected access to VPS services without public exposure.' }
 			],
-			approachTitle: 'Agent-Assisted. Never Unaccountable.',
-			approach: 'Claude Code, Pi, and OpenCode accelerate the work—not the responsibility. Agents produce reviewable changes; I understand the architecture and every changed line before a human-facing pull request exists.',
-			capabilityTitle: 'Working Surface',
+			approachTitle: 'Understand Deeply. Choose Deliberately. Deliver in Steps.',
+			approach: 'Every engagement starts with understanding: the subject, the constraints, the technology options. I choose the best fit, and I break even the biggest problem into steps a team can deliver and run. AI coding agents are part of that work. They write a lot of the code, and they make it considerably faster. What they don’t do is take responsibility. Every change that reaches your repository has been read, understood, and defended by me. You get the speed; the accountability stays mine.',
+			capabilityTitle: 'Toolbox',
 			capabilityGroups: [
 				{ title: 'Delivery Automation', items: ['GitHub Actions', 'Docker', 'Terraform Enterprise / Cloud', 'Argo CD'] },
 				{ title: 'Platform Operation', items: ['DigitalOcean Kubernetes', 'OpenShift', 'OpenTelemetry', 'Grafana Cloud', 'Prometheus', 'Loki'] },
@@ -62,7 +62,7 @@
 				{ title: 'Platform Security', items: ['Cloudflare DNS', 'Cloudflare Zero Trust', 'Cloudflare Tunnels', 'Cloudflare Workers / WAF'] }
 			],
 			contactTitle: 'A Product Decision Should Not Become a Platform Emergency.',
-			contactBody: 'Working through a product, platform, AI, or delivery decision? If the next step deserves a clear owner, let’s make it concrete.',
+			contactBody: 'Working through a product, platform, AI, or delivery decision? I take on a small number of consulting engagements alongside my day job: advisory, architecture reviews, and focused build projects. Let’s make the next step concrete.',
 			legal: { imprint: 'Imprint', privacy: 'Privacy' }
 		},
 		de: {
@@ -123,7 +123,7 @@
 
 <svelte:head>
 	<title>Robin Maasjosthusmann · Platform & AI Engineer</title>
-	<meta name="description" content="Robin Maasjosthusmann helps teams turn product bets into operable software through dependable delivery paths and governed AI capability." />
+	<meta name="description" content="Robin Maasjosthusmann is an independent Platform & AI Engineer: dependable delivery, developer platforms, and AI infrastructure with guardrails for teams in Germany and the EU." />
 </svelte:head>
 
 <a class="skip-link" href="#content">Skip to content</a>
