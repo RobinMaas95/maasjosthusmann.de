@@ -31,5 +31,5 @@ updates:
       interval: weekly
       day: monday
     commit-message:
-      prefix: chore
+      prefix: fix
       include: scope
