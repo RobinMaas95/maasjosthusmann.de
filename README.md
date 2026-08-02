@@ -36,7 +36,7 @@ Releases are automated with [release-please](https://github.com/googleapis/relea
 
 1. Merge to `main` using conventional commit messages (`feat:`, `fix:`, `copy:`, `chore:`, …).
 2. release-please maintains a release PR with the next semver version and a generated changelog.
-3. Merging that PR tags the release and publishes a multi-arch Docker image to GHCR:
+3. Merging that PR tags the release and publishes a Docker image to GHCR:
    `ghcr.io/robinmaas95/maasjosthusmann.de:<version>` and `:latest`.
 
 Note: `feat:`/`fix:` commits drive version bumps; `copy:` changes appear in the changelog but do not trigger a release on their own — use `feat:` or `fix:` for content changes that should ship.
