@@ -53,5 +53,6 @@ The site runs as a static container behind [Dokploy](https://dokploy.com):
    - `DOKPLOY_URL` — e.g. `https://dokploy.example.com`
    - `DOKPLOY_API_KEY` — the API token
    - `DOKPLOY_APPLICATION_ID` — the application ID
+5. If your Dokploy instance sits behind **Cloudflare Access**, also create a service token (Zero Trust → Access → Service Auth → Service Tokens) and add it to the application's policies, then store it as `CF_ACCESS_CLIENT_ID` and `CF_ACCESS_CLIENT_SECRET`. The deploy step sends them as headers; without Access they can stay empty.
 
 The release workflow calls `POST /api/application.deploy` after publishing a new image, so every release redeploys automatically.

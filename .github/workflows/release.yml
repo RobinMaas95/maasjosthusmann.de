@@ -62,10 +62,14 @@ jobs:
           DOKPLOY_URL: ${{ secrets.DOKPLOY_URL }}
           DOKPLOY_API_KEY: ${{ secrets.DOKPLOY_API_KEY }}
           DOKPLOY_APPLICATION_ID: ${{ secrets.DOKPLOY_APPLICATION_ID }}
+          CF_ACCESS_CLIENT_ID: ${{ secrets.CF_ACCESS_CLIENT_ID }}
+          CF_ACCESS_CLIENT_SECRET: ${{ secrets.CF_ACCESS_CLIENT_SECRET }}
         if: ${{ env.DOKPLOY_API_KEY != '' }}
         run: |
           curl -fsSL -X POST "$DOKPLOY_URL/api/application.deploy" \
             -H "accept: application/json" \
             -H "Content-Type: application/json" \
             -H "x-api-key: $DOKPLOY_API_KEY" \
+            -H "CF-Access-Client-Id: $CF_ACCESS_CLIENT_ID" \
+            -H "CF-Access-Client-Secret: $CF_ACCESS_CLIENT_SECRET" \
             -d "{\"applicationId\": \"$DOKPLOY_APPLICATION_ID\"}"
