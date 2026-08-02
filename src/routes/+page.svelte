@@ -28,15 +28,15 @@
 			nav: { services: 'Services', proof: 'Proof', approach: 'Approach', contact: 'Contact' },
 			eyebrow: 'Independent Consultant · Remote · Germany / EU',
 			title: 'Platform & AI Engineer',
-			introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams build and ship software they can actually run. Dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
+			introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams build and ship software they can actually run. I specialize in dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
 			cta: 'Start a Conversation',
 			portrait: {
 				alt: 'Robin Maasjosthusmann smiling in a bright office',
-				caption: 'I work directly with the people who own the product and the platform.'
+				caption: 'Software is ultimately about people and outcomes. I work directly with product and platform owners to solve real business problems, rather than building fancy tooling for the sake of it."'
 			},
 			about: {
 				label: 'About',
-				title: 'A practical partner in the work.',
+				title: 'A practical partner in the process.',
 				body: 'I’m Robin, an independent Platform & AI Engineer working remotely from Germany. Over the past ten years I’ve worked with teams across the EU as a software engineer, data scientist, and platform architect, in industries from telecom to insurance. Today I’m part of the team running developer platforms and AI infrastructure for hundreds of engineers as my day job; through my own consultancy I take on a small number of selected engagements alongside. I stay close to the code and the operating reality: clarify the decision, make the change, and leave the team able to run it.'
 			},
 			servicesTitle: 'Infrastructure & Developer Experience',
