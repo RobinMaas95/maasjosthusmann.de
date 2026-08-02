@@ -9,7 +9,7 @@ export default defineConfig({
 			files: { assets: 'legal-static' },
 			prerender: {
 				handleHttpError: ({ path, message }) => {
-					if (path === '/impressum/' || path === '/privacy/') return;
+					if (path === '/impressum/' || path === '/privacy/' || path === '/favicon.ico') return;
 					throw new Error(message);
 				}
 			},

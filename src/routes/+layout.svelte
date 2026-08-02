@@ -23,6 +23,7 @@
 <svelte:head>
 	<title>Robin Maasjosthusmann</title>
 	<meta name="description" content="Robin Maasjosthusmann is an independent Platform & AI Engineer: dependable delivery, developer platforms, and AI infrastructure with guardrails for teams in Germany and the EU." />
+	<link rel="icon" href="/favicon.ico" />
 
 </svelte:head>
 
