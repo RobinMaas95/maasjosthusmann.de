@@ -45,6 +45,13 @@ Note: `feat:`/`fix:` commits drive version bumps; `copy:` changes appear in the 
 
 The site runs as a static container behind [Dokploy](https://dokploy.com):
 
-1. In Dokploy, create an application from the GHCR image above (`:latest` or a pinned version).
-2. In the application's deployment settings, copy the deploy webhook URL.
-3. Store it as the `DOKPLOY_DEPLOY_WEBHOOK_URL` secret in this repository — the release workflow calls it after publishing a new image.
+1. The first release publishes the image to GHCR. Set the package to public (Package settings → Change visibility), or add GHCR credentials in Dokploy → Registry instead.
+2. In Dokploy, create an Application with provider **Docker**, image `ghcr.io/robinmaas95/website-maasjosthusmann:latest`, container port `80`, and your domain.
+3. Generate an API token in your Dokploy profile settings, then find the application ID:
+   `curl -H "x-api-key: <token>" https://<dokploy-host>/api/project.all`
+4. Add three repository secrets (Settings → Secrets and variables → Actions):
+   - `DOKPLOY_URL` — e.g. `https://dokploy.example.com`
+   - `DOKPLOY_API_KEY` — the API token
+   - `DOKPLOY_APPLICATION_ID` — the application ID
+
+The release workflow calls `POST /api/application.deploy` after publishing a new image, so every release redeploys automatically.

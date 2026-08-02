@@ -43,7 +43,7 @@ jobs:
         with:
           context: .
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: |
             ${{ env.IMAGE_NAME }}:${{ needs.release-please.outputs.tag_name }}
             ${{ env.IMAGE_NAME }}:latest
@@ -55,8 +55,15 @@ jobs:
     needs: image
     runs-on: ubuntu-latest
     steps:
-      - name: Call Dokploy deploy webhook
+      - name: Trigger Dokploy deployment
         env:
-          DOKPLOY_DEPLOY_WEBHOOK_URL: ${{ secrets.DOKPLOY_DEPLOY_WEBHOOK_URL }}
-        if: ${{ env.DOKPLOY_DEPLOY_WEBHOOK_URL != '' }}
-        run: curl -fsSL -X POST "$DOKPLOY_DEPLOY_WEBHOOK_URL"
+          DOKPLOY_URL: ${{ secrets.DOKPLOY_URL }}
+          DOKPLOY_API_KEY: ${{ secrets.DOKPLOY_API_KEY }}
+          DOKPLOY_APPLICATION_ID: ${{ secrets.DOKPLOY_APPLICATION_ID }}
+        if: ${{ env.DOKPLOY_API_KEY != '' }}
+        run: |
+          curl -fsSL -X POST "$DOKPLOY_URL/api/application.deploy" \
+            -H "accept: application/json" \
+            -H "Content-Type: application/json" \
+            -H "x-api-key: $DOKPLOY_API_KEY" \
+            -d "{\"applicationId\": \"$DOKPLOY_APPLICATION_ID\"}"
