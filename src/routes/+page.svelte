@@ -28,7 +28,7 @@
 			nav: { services: 'Services', proof: 'Proof', approach: 'Approach', contact: 'Contact' },
 			eyebrow: 'Independent Consultant · Remote · Germany / EU',
 			title: 'Platform & AI Engineer',
-			introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams ship software they can actually run. Dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
+			introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams build and ship software they can actually run. Dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
 			cta: 'Start a Conversation',
 			portrait: {
 				alt: 'Robin Maasjosthusmann smiling in a bright office',
