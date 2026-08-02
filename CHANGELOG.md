@@ -1,5 +1,15 @@
 # Changelog
 
+## [3.0.1](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.0.0...maasjosthusmann.de-v3.0.1) (2026-08-02)
+
+
+### Bug Fixes
+
+* **deps:** bump nginx from 1.27-alpine to 1.31-alpine ([a23ae03](https://github.com/RobinMaas95/maasjosthusmann.de/commit/a23ae03f7577c4f9b4edb35e6129137b40c1ed12))
+* **deps:** bump nginx from 1.27-alpine to 1.31-alpine ([0910f30](https://github.com/RobinMaas95/maasjosthusmann.de/commit/0910f3052adfd1e017dff92913a70ba6fda781bf))
+* **deps:** bump node from 24-alpine to 26-alpine ([452631d](https://github.com/RobinMaas95/maasjosthusmann.de/commit/452631d788d1353586d50f2e8f4f69922ff8cd6f))
+* **deps:** bump node from 24-alpine to 26-alpine ([c70407f](https://github.com/RobinMaas95/maasjosthusmann.de/commit/c70407f84bc36f1aebd1534ac796d527e2e42063))
+
 ## [3.0.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v2.0.0...maasjosthusmann.de-v3.0.0) (2026-08-02)
 
 
