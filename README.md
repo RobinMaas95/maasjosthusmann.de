@@ -1,8 +1,8 @@
-# website-maasjosthusmann
+# maasjosthusmann.de
 
 Personal website of Robin Maasjosthusmann — Platform & AI Engineer, independent consultant.
 
-[![CI](https://github.com/RobinMaas95/website-maasjosthusmann/actions/workflows/ci.yml/badge.svg)](https://github.com/RobinMaas95/website-maasjosthusmann/actions/workflows/ci.yml)
+[![CI](https://github.com/RobinMaas95/maasjosthusmann.de/actions/workflows/ci.yml/badge.svg)](https://github.com/RobinMaas95/maasjosthusmann.de/actions/workflows/ci.yml)
 
 ## Stack
 
@@ -25,8 +25,8 @@ npm run build      # static output in dist/
 ## Docker
 
 ```bash
-docker build -t website-maasjosthusmann .
-docker run --rm -p 8080:80 website-maasjosthusmann
+docker build -t maasjosthusmann.de .
+docker run --rm -p 8080:80 maasjosthusmann.de
 # http://localhost:8080
 ```
 
@@ -37,7 +37,7 @@ Releases are automated with [release-please](https://github.com/googleapis/relea
 1. Merge to `main` using conventional commit messages (`feat:`, `fix:`, `copy:`, `chore:`, …).
 2. release-please maintains a release PR with the next semver version and a generated changelog.
 3. Merging that PR tags the release and publishes a multi-arch Docker image to GHCR:
-   `ghcr.io/robinmaas95/website-maasjosthusmann:<version>` and `:latest`.
+   `ghcr.io/robinmaas95/maasjosthusmann.de:<version>` and `:latest`.
 
 Note: `feat:`/`fix:` commits drive version bumps; `copy:` changes appear in the changelog but do not trigger a release on their own — use `feat:` or `fix:` for content changes that should ship.
 
@@ -46,7 +46,7 @@ Note: `feat:`/`fix:` commits drive version bumps; `copy:` changes appear in the 
 The site runs as a static container behind [Dokploy](https://dokploy.com):
 
 1. The first release publishes the image to GHCR. Set the package to public (Package settings → Change visibility), or add GHCR credentials in Dokploy → Registry instead.
-2. In Dokploy, create an Application with provider **Docker**, image `ghcr.io/robinmaas95/website-maasjosthusmann:latest`, container port `80`, and your domain.
+2. In Dokploy, create an Application with provider **Docker**, image `ghcr.io/robinmaas95/maasjosthusmann.de:latest`, container port `80`, and your domain.
 3. Generate an API token in your Dokploy profile settings, then find the application ID:
    `curl -H "x-api-key: <token>" https://<dokploy-host>/api/project.all`
 4. Add three repository secrets (Settings → Secrets and variables → Actions):
