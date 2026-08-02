@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.1.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.0.1...maasjosthusmann.de-v3.1.0) (2026-08-02)
+
+
+### Features
+
+* add German locale matching English copy ([17685df](https://github.com/RobinMaas95/maasjosthusmann.de/commit/17685df2687d452fa8491fd285455efdbd3fae00))
+
 ## [3.0.1](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.0.0...maasjosthusmann.de-v3.0.1) (2026-08-02)
 
 
