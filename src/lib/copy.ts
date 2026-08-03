@@ -72,7 +72,7 @@ export const copy: Record<Language, Copy> = {
 		nav: { services: 'Leistungen', proof: 'Erfahrung', approach: 'Arbeitsweise', capability: 'Toolbox', contact: 'Kontakt' },
 		eyebrow: 'Freiberuflicher Consultant · Remote · Deutschland / EU',
 		title: 'Plattform- & AI-Engineer',
-		introduction: 'Ich bin Robin Maasjosthusmann. Seit zehn Jahren helfe ich Teams, Software zu bauen und auszuliefern, die sie wirklich betreiben können. Ich bin spezialisiert auf verlässliche Delivery, Entwicklerplattformen und Infrastruktur, die in der Realität besteht, AI eingeschlossen.',
+		introduction: 'Ich bin Robin Maasjosthusmann. Seit zehn Jahren helfe ich Teams, Software zu bauen und auszuliefern, die sie wirklich betreiben können. Ich bin spezialisiert auf verlässliche Delivery, Entwicklerplattformen und Infrastruktur, die im Alltag besteht, AI eingeschlossen.',
 		cta: 'Schreiben Sie mir',
 		portrait: {
 			alt: 'Robin Maasjosthusmann lächelt in einem hellen Büro',
