@@ -56,3 +56,18 @@ The site runs as a static container behind [Dokploy](https://dokploy.com):
 5. If your Dokploy instance sits behind **Cloudflare Access**, also create a service token (Zero Trust → Access → Service Auth → Service Tokens) and add it to the application's policies, then store it as `CF_ACCESS_CLIENT_ID` and `CF_ACCESS_CLIENT_SECRET`. The deploy step sends them as headers; without Access they can stay empty.
 
 The release workflow calls `POST /api/application.deploy` after publishing a new image, so every release redeploys automatically.
+
+### Dev slots
+
+Up to three parallel dev versions run on their own subdomains, backed by the `alpha`, `beta`, and `gamma` branches:
+
+- `alpha.maasjosthusmann.de` ← branch `alpha` ← image tag `:alpha`
+- `beta.maasjosthusmann.de` ← branch `beta` ← image tag `:beta`
+- `gamma.maasjosthusmann.de` ← branch `gamma` ← image tag `:gamma`
+
+Setup per slot:
+
+1. In Dokploy, create an Application with provider **Docker**, image `ghcr.io/robinmaas95/maasjosthusmann.de:<slot>`, container port `80`, and the slot's subdomain.
+2. Store the application ID as repository secret `DOKPLOY_APPLICATION_ID_ALPHA` / `_BETA` / `_GAMMA`.
+
+Pushing to a slot branch builds and pushes the `:<slot>` image and redeploys that application (`.github/workflows/deploy-dev.yml`). Slots without a configured secret are skipped, so you can start with one and add more later.
