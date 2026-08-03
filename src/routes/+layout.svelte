@@ -91,11 +91,14 @@
 	.sr-only { clip: rect(0 0 0 0); clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
 
 	@media (max-width: 42rem) {
-		nav { gap: 0.4rem; min-height: 3.5rem; padding-left: 0.9rem; padding-right: 0.9rem; }
-		.wordmark { font-size: 0.58rem; }
-		.navigation-links, .social-links { gap: 0.35rem; }
-		.navigation-links a, .social-links a { font-size: 0.6rem; }
-		.language-switcher { gap: 0.1rem; }
-		.language-switcher button { font-size: 0.72rem; padding: 0.45rem 0.55rem; }
+		nav { column-gap: 0.9rem; flex-wrap: wrap; min-height: 3.5rem; padding-left: 0.9rem; padding-right: 0.9rem; row-gap: 0; }
+		.wordmark { font-size: 0.75rem; padding: 0.65rem 0; }
+		.navigation-links { flex-basis: 100%; gap: 1.1rem; order: 3; padding-bottom: 0.7rem; }
+		.navigation-links a { font-size: 0.78rem; }
+		.social-links { gap: 0.4rem; }
+		.social-links a { height: 2.1rem; padding: 0 0.35rem; }
+		.social-links img { height: 1.05rem; }
+		.language-switcher { gap: 0.15rem; }
+		.language-switcher button { font-size: 0.75rem; padding: 0.5rem 0.6rem; }
 	}
 </style>
