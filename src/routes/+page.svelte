@@ -34,7 +34,7 @@
 	<p>{content.about.body}</p>
 </section>
 
-<section id="approach" aria-labelledby="approach-title">
+<section class="band" id="approach" aria-labelledby="approach-title">
 	<section class="content-frame approach-grid">
 		<section>
 			<p class="section-label">01 / {content.nav.approach}</p>
@@ -44,7 +44,7 @@
 	</section>
 </section>
 
-<section class="band" id="services" aria-labelledby="services-title">
+<section id="services" aria-labelledby="services-title">
 	<section class="content-frame section-content">
 		<p class="section-label">02 / {content.nav.services}</p>
 		<h2 id="services-title">{content.servicesTitle}</h2>
@@ -60,6 +60,7 @@
 	</section>
 </section>
 
+<section class="band">
 <section class="content-frame section-content" id="proof" aria-labelledby="proof-title">
 	<p class="section-label">03 / {content.nav.proof}</p>
 	<h2 id="proof-title">{content.proofTitle}</h2>
@@ -74,8 +75,8 @@
 		{/each}
 	</section>
 </section>
+</section>
 
-<section class="band">
 <section class="content-frame section-content" aria-labelledby="capability-title">
 	<p class="section-label">04 / {content.nav.capability}</p>
 	<h2 id="capability-title">{content.capabilityTitle}</h2>
@@ -87,7 +88,6 @@
 			</article>
 		{/each}
 	</section>
-</section>
 </section>
 
 <section class="contact-band" id="contact" aria-labelledby="contact-title">
