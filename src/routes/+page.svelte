@@ -14,7 +14,6 @@
 		<p class="eyebrow">{content.eyebrow}</p>
 		<h1 id="page-title">{content.title}</h1>
 		<p class="lead">{content.introduction}</p>
-		<a class="text-link" href="mailto:hello@maasjosthusmann.de">{content.cta}<span aria-hidden="true"> ↗</span></a>
 	</section>
 	<figure class="portrait">
 		<img
