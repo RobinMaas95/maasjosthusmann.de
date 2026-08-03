@@ -77,7 +77,7 @@
 
 <section class="band">
 <section class="content-frame section-content" aria-labelledby="capability-title">
-	<p class="section-label">04 / Capability</p>
+	<p class="section-label">04 / {content.nav.capability}</p>
 	<h2 id="capability-title">{content.capabilityTitle}</h2>
 	<section class="capability-grid">
 		{#each content.capabilityGroups as group (group.title)}
