@@ -96,6 +96,6 @@
 		.navigation-links, .social-links { gap: 0.35rem; }
 		.navigation-links a, .social-links a { font-size: 0.6rem; }
 		.language-switcher { gap: 0.1rem; }
-		.language-switcher button { font-size: 0.6rem; padding: 0.25rem; }
+		.language-switcher button { font-size: 0.72rem; padding: 0.45rem 0.55rem; }
 	}
 </style>
