@@ -34,9 +34,19 @@
 	<p>{content.about.body}</p>
 </section>
 
+<section id="approach" aria-labelledby="approach-title">
+	<section class="content-frame approach-grid">
+		<section>
+			<p class="section-label">01 / {content.nav.approach}</p>
+			<h2 id="approach-title">{content.approachTitle}</h2>
+		</section>
+		<p class="approach-copy">{content.approach}</p>
+	</section>
+</section>
+
 <section class="band" id="services" aria-labelledby="services-title">
 	<section class="content-frame section-content">
-		<p class="section-label">01 / {content.nav.services}</p>
+		<p class="section-label">02 / {content.nav.services}</p>
 		<h2 id="services-title">{content.servicesTitle}</h2>
 		<section class="services-grid">
 			{#each content.services as service (service.id)}
@@ -51,7 +61,7 @@
 </section>
 
 <section class="content-frame section-content" id="proof" aria-labelledby="proof-title">
-	<p class="section-label">02 / {content.nav.proof}</p>
+	<p class="section-label">03 / {content.nav.proof}</p>
 	<h2 id="proof-title">{content.proofTitle}</h2>
 	<section class="proof-grid">
 		{#each content.proof as item (item.id)}
@@ -65,16 +75,7 @@
 	</section>
 </section>
 
-<section class="band" id="approach" aria-labelledby="approach-title">
-	<section class="content-frame approach-grid">
-		<section>
-			<p class="section-label">03 / {content.nav.approach}</p>
-			<h2 id="approach-title">{content.approachTitle}</h2>
-		</section>
-		<p class="approach-copy">{content.approach}</p>
-	</section>
-</section>
-
+<section class="band">
 <section class="content-frame section-content" aria-labelledby="capability-title">
 	<p class="section-label">04 / Capability</p>
 	<h2 id="capability-title">{content.capabilityTitle}</h2>
@@ -86,6 +87,7 @@
 			</article>
 		{/each}
 	</section>
+</section>
 </section>
 
 <section class="contact-band" id="contact" aria-labelledby="contact-title">

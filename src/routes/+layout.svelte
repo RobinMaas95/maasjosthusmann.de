@@ -32,9 +32,9 @@
 	<nav aria-label="Primary navigation">
 		<a class="wordmark" href="/">Robin Maasjosthusmann</a>
 		<ul class="navigation-links">
+			<li><a href="/#approach">{content.nav.approach}</a></li>
 			<li><a href="/#services">{content.nav.services}</a></li>
 			<li><a href="/#proof">{content.nav.proof}</a></li>
-			<li><a href="/#approach">{content.nav.approach}</a></li>
 		</ul>
 		<ul class="social-links" aria-label="Social links">
 			<li>
