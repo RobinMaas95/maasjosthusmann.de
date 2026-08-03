@@ -27,7 +27,7 @@ export const copy: Record<Language, Copy> = {
 		eyebrow: 'Independent Consultant · Remote · Germany / EU',
 		title: 'Platform & AI Engineer',
 		introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams build and ship software they can actually run. I specialize in dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
-		cta: 'Start a Conversation',
+		cta: 'Email Me',
 		portrait: {
 			alt: 'Robin Maasjosthusmann smiling in a bright office',
 			caption: 'Software is ultimately about people and outcomes. I work directly with product and platform owners to solve real business problems.'
@@ -73,7 +73,7 @@ export const copy: Record<Language, Copy> = {
 		eyebrow: 'Freiberuflicher Consultant · Remote · Deutschland / EU',
 		title: 'Plattform- & AI-Engineer',
 		introduction: 'Ich bin Robin Maasjosthusmann. Seit zehn Jahren helfe ich Teams, Software zu bauen und auszuliefern, die sie wirklich betreiben können. Ich bin spezialisiert auf verlässliche Delivery, Entwicklerplattformen und Infrastruktur, die in der Realität besteht, AI eingeschlossen.',
-		cta: 'Gespräch Starten',
+		cta: 'Schreiben Sie mir',
 		portrait: {
 			alt: 'Robin Maasjosthusmann lächelt in einem hellen Büro',
 			caption: 'Bei Software geht es am Ende um Menschen und Ergebnisse. Ich arbeite direkt mit Produkt- und Plattformverantwortlichen an echten Geschäftsproblemen.'

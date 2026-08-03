@@ -5,7 +5,7 @@ test('renders the portfolio and persists a language choice', async ({ page }) =>
 
 	await expect(page).toHaveTitle(/Robin Maasjosthusmann/);
 	await expect(page.getByRole('heading', { name: 'Platform & AI Engineer' })).toBeVisible();
-	await expect(page.getByRole('link', { name: /Start a Conversation/ }).first()).toHaveAttribute('href', 'mailto:hello@maasjosthusmann.de');
+	await expect(page.getByRole('link', { name: /Email Me/ }).first()).toHaveAttribute('href', 'mailto:hello@maasjosthusmann.de');
 	await expect(page.getByRole('link', { name: 'Imprint' })).toHaveAttribute('href', '/impressum/');
 	await expect(page.getByRole('link', { name: 'Privacy' })).toHaveAttribute('href', '/privacy/');
 
