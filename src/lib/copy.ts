@@ -35,7 +35,7 @@ export const copy: Record<Language, Copy> = {
 		about: {
 			label: 'About',
 			title: 'A practical partner in the work.',
-			body: 'I’m Robin, an independent Platform & AI Engineer working remotely from Germany. Over the past ten years I’ve worked with teams across the EU as a software engineer, data scientist, and platform architect, in industries from telecom to insurance. Today I’m part of a team running developer platforms and AI infrastructure for hundreds of engineers as my day job; through my own consultancy I take on a small number of selected engagements alongside. I stay close to the code and the operating reality: clarify the decision, make the change, and leave the team able to run it.'
+			body: 'Independent Platform & AI Engineer working remotely from Germany. Over the past ten years I’ve worked with teams across the EU as a software engineer, data scientist, and platform architect, in industries from telecom to insurance. Today I’m part of a team running developer platforms and AI infrastructure for hundreds of engineers as my day job; through my own consultancy I take on a small number of selected engagements alongside. I stay close to the code and the operating reality: clarify the decision, make the change, and leave the team able to run it.'
 		},
 		servicesTitle: 'Infrastructure & Developer Experience',
 		services: [
