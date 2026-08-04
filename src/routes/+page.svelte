@@ -16,13 +16,16 @@
 		<p class="lead">{content.introduction}</p>
 	</section>
 	<figure class="portrait">
-		<img
-			alt={content.portrait.alt}
-			fetchpriority="high"
-			height="4032"
-			src="/images/robin-maasjosthusmann.jpg"
-			width="3024"
-		/>
+		<picture>
+			<source srcset="/images/robin-maasjosthusmann.webp" type="image/webp" />
+			<img
+				alt={content.portrait.alt}
+				fetchpriority="high"
+				height="1600"
+				src="/images/robin-maasjosthusmann.jpg"
+				width="1200"
+			/>
+		</picture>
 		<figcaption>{content.portrait.caption}</figcaption>
 	</figure>
 </section>
