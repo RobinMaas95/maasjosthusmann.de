@@ -35,6 +35,7 @@
 			<li><a href="/#approach">{content.nav.approach}</a></li>
 			<li><a href="/#services">{content.nav.services}</a></li>
 			<li><a href="/#proof">{content.nav.proof}</a></li>
+			<li><a href="/blog/">{content.nav.blog}</a></li>
 		</ul>
 		<ul class="social-links" aria-label="Social links">
 			<li>
