@@ -1,5 +1,43 @@
 # Changelog
 
+## [3.2.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.1.0...maasjosthusmann.de-v3.2.0) (2026-08-04)
+
+
+### Features
+
+* add dev slot deployments for alpha, beta and gamma branches ([8fb3b6e](https://github.com/RobinMaas95/maasjosthusmann.de/commit/8fb3b6e31ca2e7b3b636dabb5cc9c5737dd829cc))
+* localize capability section label instead of hardcoding it ([6c70dfe](https://github.com/RobinMaas95/maasjosthusmann.de/commit/6c70dfe00499731e8b26c2ca8cab33b83fcb3400))
+* move approach section above services and proof ([bc43d23](https://github.com/RobinMaas95/maasjosthusmann.de/commit/bc43d232c59a60517681f2a0df3858884283e85f))
+* remove hero contact CTA, keep contact band as single call to action ([aa51ca9](https://github.com/RobinMaas95/maasjosthusmann.de/commit/aa51ca9c552e3b2d1f50b6a99c050d4201c20d18))
+* rework selected work, section order, legal pages and mobile header ([247175b](https://github.com/RobinMaas95/maasjosthusmann.de/commit/247175b4cb89fc51cd60fa698515ee95bc75c043))
+* rewrite selected work entries with reworked variants (EN + DE) ([6cb06ca](https://github.com/RobinMaas95/maasjosthusmann.de/commit/6cb06ca1945389d4f109a3b12eb261a40daccf61))
+* show legal pages in active language only ([de53756](https://github.com/RobinMaas95/maasjosthusmann.de/commit/de537564cd5d363f8b7674210adf617148653202))
+
+
+### Bug Fixes
+
+* add favicon link to layout, allow 404 during prerender ([c589c31](https://github.com/RobinMaas95/maasjosthusmann.de/commit/c589c31ade180f9a715633975e766e441fe5e12c))
+* enlarge language switcher tap targets on mobile ([f8dd03b](https://github.com/RobinMaas95/maasjosthusmann.de/commit/f8dd03ba14a2bb260a2aea713ce50f4701d5dcd5))
+* Improve site performance by using webp ([8e5e4c6](https://github.com/RobinMaas95/maasjosthusmann.de/commit/8e5e4c6325383430edc63e5c1200eab16eed1b9a))
+* Improve site performance by using webp ([8d40399](https://github.com/RobinMaas95/maasjosthusmann.de/commit/8d403999247b7b0693628ba9215c2bc1b3c472d2))
+* restore alternating section backgrounds after reorder ([448f7ef](https://github.com/RobinMaas95/maasjosthusmann.de/commit/448f7ef135bbda47bb4872494aa3e893f9c0fb65))
+* restore contents read permission for dev slot checkout ([0f38a79](https://github.com/RobinMaas95/maasjosthusmann.de/commit/0f38a7913f67542aaff1c92f7e1e935b5a7edfa7))
+* restructure mobile header into two rows with larger tap targets ([3618488](https://github.com/RobinMaas95/maasjosthusmann.de/commit/36184889d29b8eb90ceee8ab483457775eed9520))
+* touchup german translation ([566c74e](https://github.com/RobinMaas95/maasjosthusmann.de/commit/566c74e27c3e8a84b596ddf89329b636af8c333f))
+* Update english about ([8d8c818](https://github.com/RobinMaas95/maasjosthusmann.de/commit/8d8c81875984ae0639bb837e81b891d6322c56c1))
+* use trailing slash URLs for legal page prerendering ([6eb058a](https://github.com/RobinMaas95/maasjosthusmann.de/commit/6eb058a7053bb17cb620684d663d795a1a721a4a))
+
+
+### Content
+
+* replace conversation CTA with email CTA (EN + DE) ([312dc9d](https://github.com/RobinMaas95/maasjosthusmann.de/commit/312dc9d667ae3cb24df722a5ad09e8592efc5240))
+
+
+### Documentation
+
+* correct GHCR image tag format in release docs ([e97444c](https://github.com/RobinMaas95/maasjosthusmann.de/commit/e97444cf2d7d4cf5fdf118c43461ef88042e5405))
+* document dispatch-based dev slot deployments ([7daf25d](https://github.com/RobinMaas95/maasjosthusmann.de/commit/7daf25d2e528f47d2736ad2ab6b3760bd92a48da))
+
 ## [3.1.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.0.1...maasjosthusmann.de-v3.1.0) (2026-08-02)
 
 
