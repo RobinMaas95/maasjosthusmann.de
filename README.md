@@ -59,15 +59,17 @@ The release workflow calls `POST /api/application.deploy` after publishing a new
 
 ### Dev slots
 
-Up to three parallel dev versions run on their own subdomains, backed by the `alpha`, `beta`, and `gamma` branches:
+Up to three parallel dev versions run on their own subdomains:
 
-- `alpha.maasjosthusmann.de` ← branch `alpha` ← image tag `:alpha`
-- `beta.maasjosthusmann.de` ← branch `beta` ← image tag `:beta`
-- `gamma.maasjosthusmann.de` ← branch `gamma` ← image tag `:gamma`
+- `alpha.maasjosthusmann.de` ← image tag `:alpha`
+- `beta.maasjosthusmann.de` ← image tag `:beta`
+- `gamma.maasjosthusmann.de` ← image tag `:gamma`
 
 Setup per slot:
 
 1. In Dokploy, create an Application with provider **Docker**, image `ghcr.io/robinmaas95/maasjosthusmann.de:<slot>`, container port `80`, and the slot's subdomain.
 2. Store the application ID as repository secret `DOKPLOY_APPLICATION_ID_ALPHA` / `_BETA` / `_GAMMA`.
 
-Pushing to a slot branch builds and pushes the `:<slot>` image and redeploys that application (`.github/workflows/deploy-dev.yml`). Slots without a configured secret are skipped, so you can start with one and add more later.
+Deploy via **Actions → Deploy dev slot → Run workflow**: pick the branch to build from, choose a slot, and leave the tag empty to build from source — or pass an existing image tag (e.g. `maasjosthusmann.de-v3.1.0`) to retag it onto the slot without rebuilding. The workflow builds and pushes the `:<slot>` image and redeploys that application. Slots without a configured secret are skipped.
+
+Alternatively, pushing to a branch named `alpha`, `beta`, or `gamma` deploys that slot directly.
