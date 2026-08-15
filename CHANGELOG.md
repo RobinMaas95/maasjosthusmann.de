@@ -1,5 +1,17 @@
 # Changelog
 
+## [3.3.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.2.0...maasjosthusmann.de-v3.3.0) (2026-08-15)
+
+
+### Features
+
+* Add blog section + glove80 entry ([#14](https://github.com/RobinMaas95/maasjosthusmann.de/issues/14)) ([249ef5e](https://github.com/RobinMaas95/maasjosthusmann.de/commit/249ef5e8718d7fb10f8d0fde1ea254ea9fb309ea))
+
+
+### Documentation
+
+* Update readme ([828e4b3](https://github.com/RobinMaas95/maasjosthusmann.de/commit/828e4b35708ef296a70d67a0b0599964a738388e))
+
 ## [3.2.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.1.0...maasjosthusmann.de-v3.2.0) (2026-08-04)
 
 
