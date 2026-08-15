@@ -1,7 +1,7 @@
 import type { Language } from './locale';
 
 export type Copy = {
-	nav: { services: string; proof: string; approach: string; capability: string; contact: string };
+	nav: { services: string; proof: string; approach: string; capability: string; contact: string; blog: string };
 	eyebrow: string;
 	title: string;
 	introduction: string;
@@ -23,7 +23,7 @@ export type Copy = {
 
 export const copy: Record<Language, Copy> = {
 	en: {
-		nav: { services: 'Services', proof: 'Proof', approach: 'Approach', capability: 'Capability', contact: 'Contact' },
+		nav: { services: 'Services', proof: 'Proof', approach: 'Approach', capability: 'Capability', contact: 'Contact', blog: 'Blog' },
 		eyebrow: 'Independent Consultant · Remote · Germany / EU',
 		title: 'Platform & AI Engineer',
 		introduction: 'I’m Robin Maasjosthusmann. For ten years I’ve helped teams build and ship software they can actually run. I specialize in dependable delivery, developer platforms, and infrastructure that survives contact with reality, AI included.',
@@ -69,7 +69,7 @@ export const copy: Record<Language, Copy> = {
 		legal: { imprint: 'Imprint', privacy: 'Privacy' }
 	},
 	de: {
-		nav: { services: 'Leistungen', proof: 'Erfahrung', approach: 'Arbeitsweise', capability: 'Toolbox', contact: 'Kontakt' },
+		nav: { services: 'Leistungen', proof: 'Erfahrung', approach: 'Arbeitsweise', capability: 'Toolbox', contact: 'Kontakt', blog: 'Blog' },
 		eyebrow: 'Freiberuflicher Consultant · Remote · Deutschland / EU',
 		title: 'Plattform- & AI-Engineer',
 		introduction: 'Ich bin Robin Maasjosthusmann. Seit zehn Jahren helfe ich Teams, Software zu bauen und auszuliefern, die sie wirklich betreiben können. Ich bin spezialisiert auf verlässliche Delivery, Entwicklerplattformen und Infrastruktur, die im Alltag besteht, AI eingeschlossen.',

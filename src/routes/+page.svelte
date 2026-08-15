@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { language } from '$lib/locale';
 	import { copy } from '$lib/copy';
+	import { listPosts } from '$lib/blog';
 
 	let content = $derived(copy[$language]);
+	const latestPost = listPosts()[0];
 </script>
 
 <svelte:head>
@@ -91,10 +93,21 @@
 		{/each}
 	</section>
 </section>
+<section class="band latest-writing" aria-labelledby="blog-title">
+	<section class="content-frame section-content">
+		<p class="section-label">05 / {content.nav.blog}</p>
+		<h2 id="blog-title">Writing on platforms and AI.</h2>
+		{#if latestPost}
+			<p class="latest-post-title">{latestPost.title}</p>
+			<p class="latest-post-description">{latestPost.description}</p>
+			<a class="text-link" href={`/blog/${latestPost.slug}/`}>Read the latest note <span aria-hidden="true">↗</span></a>
+		{/if}
+	</section>
+</section>
 
 <section class="contact-band" id="contact" aria-labelledby="contact-title">
 	<section class="content-frame contact-panel">
-		<p class="section-label">05 / {content.nav.contact}</p>
+		<p class="section-label">06 / {content.nav.contact}</p>
 		<h2 id="contact-title">{content.contactTitle}</h2>
 		<p>{content.contactBody}</p>
 		<a class="text-link" href="mailto:hello@maasjosthusmann.de">{content.cta}<span aria-hidden="true"> ↗</span></a>
@@ -121,6 +134,9 @@
 	article p { color: var(--muted); font-size: 0.79rem; line-height: 1.55; }
 	.band, .contact-band { background: var(--band); }
 	.section-content { padding-bottom: 5.5rem; padding-top: 5.5rem; }
+	.latest-writing h2 { margin-bottom: 1.5rem; }
+	.latest-post-title { color: var(--ink); font-family: Georgia, serif; font-size: clamp(1.25rem, 2.4vw, 1.8rem); letter-spacing: -0.035em; margin-bottom: 0.65rem; }
+	.latest-post-description { color: var(--muted); line-height: 1.6; margin-bottom: 1.25rem; max-width: 38rem; }
 	.services-grid, .proof-grid, .capability-grid { display: grid; gap: 2.25rem 1.75rem; }
 	.services-grid { grid-template-columns: repeat(3, 1fr); }
 	.proof-grid, .capability-grid { grid-template-columns: repeat(2, 1fr); }
