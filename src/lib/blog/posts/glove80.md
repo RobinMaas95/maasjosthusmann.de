@@ -64,3 +64,5 @@ The more important difference appeared after longer, more intensive typing. The 
 And that is the real benefit for me. The Glove80 temporarily made me slower, forced me to correct habits I had built over decades, and asked me to trust a completely unfamiliar layout. But in return, I can work for hours without typing itself getting in the way. My attention stays on the actual challenges of my job instead of the fatigue in my fingers and arms.
 
 For me, that was enough to make the learning curve worthwhile.
+
+> **AI assistance:** I used AI to improve the grammar, spelling, and some wording in this post. All ideas, opinions, and substantive content are my own.
