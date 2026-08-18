@@ -15,6 +15,13 @@ test('loads published posts newest first', () => {
 	expect(posts[0].content).toContain('<p>');
 });
 
+test('syntax-highlights fenced JSON code blocks', () => {
+	const post = getPost('windows-macos-shortcuts');
+
+	expect(post?.content).toContain('<code class="hljs language-json">');
+	expect(post?.content).toMatch(/<span class="hljs-(?:attr|string|punctuation)">/);
+});
+
 test('finds a post by slug and returns undefined for an unknown slug', () => {
 	expect(getPost('glove80')?.date).toBe('2026-08-04');
 	expect(getPost('missing-post')).toBeUndefined();

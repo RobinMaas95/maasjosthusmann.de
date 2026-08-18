@@ -1,4 +1,25 @@
-import { marked } from 'marked';
+import { Marked } from 'marked';
+import { markedHighlight } from 'marked-highlight';
+import hljs from 'highlight.js/lib/core';
+import json from 'highlight.js/lib/languages/json';
+import lua from 'highlight.js/lib/languages/lua';
+import plaintext from 'highlight.js/lib/languages/plaintext';
+
+hljs.registerLanguage('json', json);
+hljs.registerLanguage('lua', lua);
+hljs.registerLanguage('plaintext', plaintext);
+hljs.registerAliases(['text', 'txt'], { languageName: 'plaintext' });
+
+const marked = new Marked(
+	markedHighlight({
+		emptyLangClass: 'hljs',
+		langPrefix: 'hljs language-',
+		highlight(code, language) {
+			const supportedLanguage = hljs.getLanguage(language) ? language : 'plaintext';
+			return hljs.highlight(code, { language: supportedLanguage }).value;
+		}
+	})
+);
 
 export type BlogPost = {
 	slug: string;
