@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.4.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.3.1...maasjosthusmann.de-v3.4.0) (2026-08-18)
+
+
+### Features
+
+* **blog:** Blockpost windows-mac-shortcuts ([b655db4](https://github.com/RobinMaas95/maasjosthusmann.de/commit/b655db46b580e48bedf123130e5dc91d6add9a2a))
+
 ## [3.3.1](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.3.0...maasjosthusmann.de-v3.3.1) (2026-08-15)
 
 
