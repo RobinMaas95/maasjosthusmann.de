@@ -47,6 +47,7 @@
 	.post-content :global(.hljs-number), .post-content :global(.hljs-literal), .post-content :global(.hljs-bullet) { color: #f0b27a; }
 	.post-content :global(.hljs-keyword), .post-content :global(.hljs-selector-class), .post-content :global(.hljs-built_in) { color: #d7a8f2; }
 	.post-content :global(.hljs-variable), .post-content :global(.hljs-template-variable), .post-content :global(.hljs-title) { color: #f4d17a; }
+	.post-content :global(img) { max-width: 100%; height: auto; }
 	@media (max-width: 42rem) {
 		.post-page { padding-bottom: 4rem; padding-top: 2rem; }
 		.post-header { margin-top: 3rem; }
