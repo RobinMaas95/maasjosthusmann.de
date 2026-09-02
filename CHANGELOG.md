@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.5.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.4.0...maasjosthusmann.de-v3.5.0) (2026-09-02)
+
+
+### Features
+
+* **blog:** Add atuin post ([66beac6](https://github.com/RobinMaas95/maasjosthusmann.de/commit/66beac68cfe5888981a05cba8e61f54d91dd48e6))
+
 ## [3.4.0](https://github.com/RobinMaas95/maasjosthusmann.de/compare/maasjosthusmann.de-v3.3.1...maasjosthusmann.de-v3.4.0) (2026-08-18)
 
 
