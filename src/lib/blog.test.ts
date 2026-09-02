@@ -22,6 +22,13 @@ test('syntax-highlights fenced JSON code blocks', () => {
 	expect(post?.content).toMatch(/<span class="hljs-(?:attr|string|punctuation)">/);
 });
 
+test('syntax-highlights fenced TOML code blocks', () => {
+	const post = getPost('shell-history-i-want');
+
+	expect(post?.content).toContain('<code class="hljs language-toml">');
+	expect(post?.content).toMatch(/<span class="hljs-(?:attr|string|comment|literal)">/);
+});
+
 test('finds a post by slug and returns undefined for an unknown slug', () => {
 	expect(getPost('glove80')?.date).toBe('2026-08-04');
 	expect(getPost('missing-post')).toBeUndefined();
